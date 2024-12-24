@@ -1,4 +1,4 @@
-Online Examination System
+Examination System
 
 Overview
 
