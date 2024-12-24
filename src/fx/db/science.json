@@ -1,0 +1,184 @@
+[
+    {
+      "id": 1,
+      "text": "Who is known as the father of modern philosophy?",
+      "options": ["René Descartes", "Socrates", "Aristotle", "Plato"],
+      "correctAnswer": "René Descartes",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 2,
+      "text": "Which of the following is an example of a primary source?",
+      "options": ["Historical letters", "Textbooks", "Encyclopedias", "Newspaper articles"],
+      "correctAnswer": "Historical letters",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 3,
+      "text": "Which philosophy emphasizes the importance of individual freedom and choice?",
+      "options": ["Existentialism", "Stoicism", "Hedonism", "Utilitarianism"],
+      "correctAnswer": "Existentialism",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 4,
+      "text": "What is the main focus of sociology?",
+      "options": ["Study of society and human behavior", "Study of language", "Study of historical events", "Study of the mind"],
+      "correctAnswer": "Study of society and human behavior",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 5,
+      "text": "Who wrote 'The Republic'?",
+      "options": ["Plato", "Aristotle", "Socrates", "Nietzsche"],
+      "correctAnswer": "Plato",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 6,
+      "text": "Which of the following is a key idea in Marxism?",
+      "options": ["Class struggle", "Divine right", "Utilitarianism", "Social contract"],
+      "correctAnswer": "Class struggle",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 7,
+      "text": "What is the primary purpose of anthropology?",
+      "options": ["Study of human societies and cultures", "Study of ancient civilizations", "Study of animal behavior", "Study of ancient languages"],
+      "correctAnswer": "Study of human societies and cultures",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 8,
+      "text": "Who is credited with developing the theory of evolution?",
+      "options": ["Charles Darwin", "Sigmund Freud", "Albert Einstein", "Isaac Newton"],
+      "correctAnswer": "Charles Darwin",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 9,
+      "text": "Which of the following is a key idea in feminism?",
+      "options": ["Gender equality", "Racial equality", "Environmental conservation", "Technological advancement"],
+      "correctAnswer": "Gender equality",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 10,
+      "text": "Which field of social science studies the past and its impact on the present?",
+      "options": ["History", "Psychology", "Economics", "Sociology"],
+      "correctAnswer": "History",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 11,
+      "text": "Who is known as the father of modern psychology?",
+      "options": ["Sigmund Freud", "John Locke", "B.F. Skinner", "Carl Rogers"],
+      "correctAnswer": "Sigmund Freud",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 12,
+      "text": "What is the main focus of political science?",
+      "options": ["Study of politics, government systems, and political behavior", "Study of economic systems", "Study of culture and language", "Study of criminal behavior"],
+      "correctAnswer": "Study of politics, government systems, and political behavior",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 13,
+      "text": "What is the concept of 'tabula rasa'?",
+      "options": ["Blank slate", "Divine right", "Government by consent", "Social contract"],
+      "correctAnswer": "Blank slate",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 14,
+      "text": "What is the term for the study of human cultures through their artifacts and physical remains?",
+      "options": ["Archaeology", "Anthropology", "Sociology", "Linguistics"],
+      "correctAnswer": "Archaeology",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 15,
+      "text": "What was the main cause of the French Revolution?",
+      "options": ["Social inequality and economic distress", "Industrialization", "Colonial expansion", "Religious conflict"],
+      "correctAnswer": "Social inequality and economic distress",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 16,
+      "text": "What does the term 'civil disobedience' refer to?",
+      "options": ["Nonviolent resistance to unjust laws", "Direct military action", "Revolutionary violence", "Legitimate forms of protest"],
+      "correctAnswer": "Nonviolent resistance to unjust laws",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 17,
+      "text": "Which concept was introduced by Jean Piaget in developmental psychology?",
+      "options": ["Stages of cognitive development", "Behavioral conditioning", "Classical conditioning", "Psychosexual stages"],
+      "correctAnswer": "Stages of cognitive development",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 18,
+      "text": "Which thinker is associated with the theory of utilitarianism?",
+      "options": ["John Stuart Mill", "Karl Marx", "Immanuel Kant", "Thomas Hobbes"],
+      "correctAnswer": "John Stuart Mill",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 19,
+      "text": "What does the term 'capitalism' refer to?",
+      "options": ["An economic system based on private ownership and free markets", "A political system based on state ownership", "A social system based on communal property", "An ideology promoting socialism"],
+      "correctAnswer": "An economic system based on private ownership and free markets",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 20,
+      "text": "What is the name of the principle that governs the behavior of individuals in a society?",
+      "options": ["Social contract", "Utilitarianism", "Laissez-faire", "Divine right"],
+      "correctAnswer": "Social contract",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 21,
+      "text": "Which of the following is considered a secondary source?",
+      "options": ["Biographies", "Photographs", "Official records", "Newspaper articles"],
+      "correctAnswer": "Biographies",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 22,
+      "text": "Which field of study focuses on the human mind and behavior?",
+      "options": ["Psychology", "Sociology", "Economics", "Political Science"],
+      "correctAnswer": "Psychology",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 23,
+      "text": "Which theory is associated with the psychologist Abraham Maslow?",
+      "options": ["Hierarchy of needs", "Behaviorism", "Operant conditioning", "Psychodynamic theory"],
+      "correctAnswer": "Hierarchy of needs",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 24,
+      "text": "What is the term for the separation of powers in a government?",
+      "options": ["Checks and balances", "Autocracy", "Monarchy", "Totalitarianism"],
+      "correctAnswer": "Checks and balances",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 25,
+      "text": "What is the study of the production, distribution, and consumption of goods and services?",
+      "options": ["Economics", "Anthropology", "Sociology", "Political Science"],
+      "correctAnswer": "Economics",
+      "material": "Humanities and Social Sciences"
+    },
+    {
+      "id": 26,
+      "text": "Which philosophy advocates for the greatest happiness for the greatest number?",
+      "options": ["Utilitarianism", "Stoicism", "Hedonism", "Existentialism"],
+      "correctAnswer": "Utilitarianism",
+      "material": "Humanities and Social Sciences"
+    }
+  ]

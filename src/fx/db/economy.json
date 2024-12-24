@@ -1,0 +1,212 @@
+ [
+    {
+      "id": 1,
+      "text": "What is the term for a market structure with a single seller and no close substitutes?",
+      "options": ["Monopoly", "Oligopoly", "Perfect competition", "Monopolistic competition"],
+      "correctAnswer": "Monopoly",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 2,
+      "text": "Which economic concept describes the additional cost of producing one more unit of a good?",
+      "options": ["Marginal cost", "Opportunity cost", "Average cost", "Fixed cost"],
+      "correctAnswer": "Marginal cost",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 3,
+      "text": "What does GDP stand for?",
+      "options": ["Gross Domestic Product", "General Domestic Production", "Global Development Plan", "Gross Development Percentage"],
+      "correctAnswer": "Gross Domestic Product",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 4,
+      "text": "Which term refers to the total amount of money earned by a business before expenses?",
+      "options": ["Revenue", "Profit", "Capital", "Equity"],
+      "correctAnswer": "Revenue",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 5,
+      "text": "What is the primary function of the stock market?",
+      "options": ["Facilitating buying and selling of company shares", "Controlling inflation", "Issuing currency", "Determining interest rates"],
+      "correctAnswer": "Facilitating buying and selling of company shares",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 6,
+      "text": "What is the term for the money invested in a business to generate profits?",
+      "options": ["Capital", "Revenue", "Profit", "Liability"],
+      "correctAnswer": "Capital",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 7,
+      "text": "What is the study of individual markets and consumer behavior called?",
+      "options": ["Microeconomics", "Macroeconomics", "Econometrics", "International economics"],
+      "correctAnswer": "Microeconomics",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 8,
+      "text": "Which of the following is an example of a fixed cost?",
+      "options": ["Rent for a factory", "Raw materials", "Wages", "Electricity bills"],
+      "correctAnswer": "Rent for a factory",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 9,
+      "text": "What is the term for a government-imposed limit on the price of a good?",
+      "options": ["Price ceiling", "Price floor", "Tariff", "Subsidy"],
+      "correctAnswer": "Price ceiling",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 10,
+      "text": "What is the primary goal of a business in a capitalist economy?",
+      "options": ["Maximizing profit", "Serving society", "Achieving sustainability", "Reducing unemployment"],
+      "correctAnswer": "Maximizing profit",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 11,
+      "text": "Which term refers to the practice of spreading financial investments to reduce risk?",
+      "options": ["Diversification", "Hedging", "Speculation", "Capitalization"],
+      "correctAnswer": "Diversification",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 12,
+      "text": "What is the primary role of a central bank in an economy?",
+      "options": ["Regulating monetary policy", "Issuing company stocks", "Providing business loans", "Managing government spending"],
+      "correctAnswer": "Regulating monetary policy",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 13,
+      "text": "Which of the following is considered a liability on a company's balance sheet?",
+      "options": ["Loans payable", "Cash on hand", "Equipment", "Inventory"],
+      "correctAnswer": "Loans payable",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 14,
+      "text": "What does ROI stand for in business?",
+      "options": ["Return on Investment", "Revenue over Income", "Rate of Interest", "Risk of Insolvency"],
+      "correctAnswer": "Return on Investment",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 15,
+      "text": "Which economic term describes a situation where supply exceeds demand?",
+      "options": ["Surplus", "Shortage", "Equilibrium", "Deficit"],
+      "correctAnswer": "Surplus",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 16,
+      "text": "Which term refers to the percentage of unemployed individuals in the labor force?",
+      "options": ["Unemployment rate", "Inflation rate", "Labor force participation rate", "Workforce productivity"],
+      "correctAnswer": "Unemployment rate",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 17,
+      "text": "What is the name of the economic system where the means of production are privately owned?",
+      "options": ["Capitalism", "Socialism", "Communism", "Feudalism"],
+      "correctAnswer": "Capitalism",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 18,
+      "text": "Which term refers to a business structure owned and operated by a single individual?",
+      "options": ["Sole proprietorship", "Partnership", "Corporation", "Cooperative"],
+      "correctAnswer": "Sole proprietorship",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 19,
+      "text": "What is the purpose of a SWOT analysis in business planning?",
+      "options": ["Identify strengths, weaknesses, opportunities, and threats", "Evaluate financial performance", "Measure customer satisfaction", "Analyze market trends"],
+      "correctAnswer": "Identify strengths, weaknesses, opportunities, and threats",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 20,
+      "text": "Which type of market structure is characterized by many sellers and differentiated products?",
+      "options": ["Monopolistic competition", "Oligopoly", "Perfect competition", "Monopoly"],
+      "correctAnswer": "Monopolistic competition",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 21,
+      "text": "What is the term for the ability of a company to pay off its short-term debts?",
+      "options": ["Liquidity", "Profitability", "Solvency", "Efficiency"],
+      "correctAnswer": "Liquidity",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 22,
+      "text": "Which of the following is a form of indirect tax?",
+      "options": ["Sales tax", "Income tax", "Corporate tax", "Property tax"],
+      "correctAnswer": "Sales tax",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 23,
+      "text": "Which term refers to a company's total earnings after deducting all expenses?",
+      "options": ["Net income", "Gross income", "Revenue", "Cash flow"],
+      "correctAnswer": "Net income",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 24,
+      "text": "What is the term for an economic system controlled by the government?",
+      "options": ["Command economy", "Market economy", "Mixed economy", "Traditional economy"],
+      "correctAnswer": "Command economy",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 25,
+      "text": "What is the primary objective of marketing?",
+      "options": ["Creating value for customers", "Increasing production efficiency", "Managing financial resources", "Reducing operational costs"],
+      "correctAnswer": "Creating value for customers",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 26,
+      "text": "Which accounting principle requires revenue to be recognized when it is earned?",
+      "options": ["Revenue recognition principle", "Matching principle", "Conservatism principle", "Full disclosure principle"],
+      "correctAnswer": "Revenue recognition principle",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 27,
+      "text": "Which economic indicator measures changes in the prices of goods and services?",
+      "options": ["Consumer Price Index (CPI)", "Gross Domestic Product (GDP)", "Unemployment rate", "Interest rate"],
+      "correctAnswer": "Consumer Price Index (CPI)",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 28,
+      "text": "What does the term 'depreciation' refer to in accounting?",
+      "options": ["The reduction in value of an asset over time", "The increase in production costs", "The rise in market prices", "The loss of revenue"],
+      "correctAnswer": "The reduction in value of an asset over time",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 29,
+      "text": "What is the term for a prolonged period of economic decline?",
+      "options": ["Recession", "Depression", "Inflation", "Stagflation"],
+      "correctAnswer": "Depression",
+      "material": "Business and Economics"
+    },
+    {
+      "id": 30,
+      "text": "Which financial statement summarizes a company's assets, liabilities, and equity?",
+      "options": ["Balance sheet", "Income statement", "Cash flow statement", "Statement of retained earnings"],
+      "correctAnswer": "Balance sheet",
+      "material": "Business and Economics"
+    }
+  ]

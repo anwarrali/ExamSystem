@@ -1,0 +1,213 @@
+ [
+    {
+      "id": 1,
+      "text": "What is the main function of a transistor in an electronic circuit?",
+      "options": ["Amplification", "Signal modulation", "Power supply regulation", "Current sensing"],
+      "correctAnswer": "Amplification",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 2,
+      "text": "Which material is primarily used for the construction of electrical cables?",
+      "options": ["Copper", "Aluminum", "Iron", "Steel"],
+      "correctAnswer": "Copper",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 3,
+      "text": "What is the unit of electrical resistance?",
+      "options": ["Volt", "Ohm", "Ampere", "Watt"],
+      "correctAnswer": "Ohm",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 4,
+      "text": "What is the primary function of a hydraulic system?",
+      "options": ["Transmit force", "Store energy", "Convert electrical energy", "Control airflow"],
+      "correctAnswer": "Transmit force",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 5,
+      "text": "Which type of engine is used in most commercial airplanes?",
+      "options": ["Piston engine", "Jet engine", "Gas turbine", "Rocket engine"],
+      "correctAnswer": "Jet engine",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 6,
+      "text": "Which material is commonly used for semiconductor devices?",
+      "options": ["Copper", "Silicon", "Aluminum", "Gold"],
+      "correctAnswer": "Silicon",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 7,
+      "text": "What does the acronym CNC stand for in manufacturing?",
+      "options": ["Computer Numerical Control", "Centralized Network Computing", "Continuous Network Connection", "Central Node Configuration"],
+      "correctAnswer": "Computer Numerical Control",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 8,
+      "text": "What is the purpose of a heat sink in electronics?",
+      "options": ["Heat insulation", "Power generation", "Heat dissipation", "Current regulation"],
+      "correctAnswer": "Heat dissipation",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 9,
+      "text": "What is the name of the law that defines the relationship between current, voltage, and resistance?",
+      "options": ["Ohm's Law", "Kirchhoff's Law", "Faraday's Law", "Newton's Law"],
+      "correctAnswer": "Ohm's Law",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 10,
+      "text": "What is the primary purpose of a capacitor in a circuit?",
+      "options": ["Store energy", "Amplify signal", "Regulate voltage", "Convert current"],
+      "correctAnswer": "Store energy",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 11,
+      "text": "Which technology is commonly used for wireless communication?",
+      "options": ["Bluetooth", "Ethernet", "HDMI", "USB"],
+      "correctAnswer": "Bluetooth",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 12,
+      "text": "Which material is commonly used for making glass?",
+      "options": ["Sand", "Clay", "Limestone", "Iron ore"],
+      "correctAnswer": "Sand",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 13,
+      "text": "What does the term 'four-stroke engine' refer to?",
+      "options": ["Type of fuel", "Type of lubrication", "Engine cycle", "Type of cooling system"],
+      "correctAnswer": "Engine cycle",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 14,
+      "text": "What is the purpose of an alternator in an automobile?",
+      "options": ["Charge the battery", "Power the engine", "Control air conditioning", "Heat the car interior"],
+      "correctAnswer": "Charge the battery",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 15,
+      "text": "Which of the following is a renewable source of energy?",
+      "options": ["Coal", "Solar", "Natural Gas", "Nuclear"],
+      "correctAnswer": "Solar",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 16,
+      "text": "What is the unit of power?",
+      "options": ["Joule", "Ampere", "Watt", "Volt"],
+      "correctAnswer": "Watt",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 17,
+      "text": "Which of the following is NOT a type of bridge construction?",
+      "options": ["Suspension", "Arch", "Canton", "Beam"],
+      "correctAnswer": "Canton",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 18,
+      "text": "In what field is the technology of 3D printing primarily used?",
+      "options": ["Manufacturing", "Software", "Healthcare", "Education"],
+      "correctAnswer": "Manufacturing",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 19,
+      "text": "Which type of circuit is used to amplify signals?",
+      "options": ["Oscillator", "Amplifier", "Resistor", "Capacitor"],
+      "correctAnswer": "Amplifier",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 20,
+      "text": "What is the term for the process of converting sunlight into electricity?",
+      "options": ["Photosynthesis", "Solar conversion", "Photovoltaic effect", "Solar synthesis"],
+      "correctAnswer": "Photovoltaic effect",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 21,
+      "text": "Which of the following is used for thermal insulation in construction?",
+      "options": ["Fiberglass", "Concrete", "Steel", "Glass"],
+      "correctAnswer": "Fiberglass",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 22,
+      "text": "Which type of engineering deals with the design and development of machines?",
+      "options": ["Mechanical Engineering", "Civil Engineering", "Electrical Engineering", "Chemical Engineering"],
+      "correctAnswer": "Mechanical Engineering",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 23,
+      "text": "What is the main advantage of fiber optic cables?",
+      "options": ["High speed", "Low cost", "Easy installation", "Durability"],
+      "correctAnswer": "High speed",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 24,
+      "text": "What material is primarily used in the production of semiconductors?",
+      "options": ["Silicon", "Copper", "Gold", "Aluminum"],
+      "correctAnswer": "Silicon",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 25,
+      "text": "Which field involves the study of software development and systems?",
+      "options": ["Electrical Engineering", "Computer Engineering", "Mechanical Engineering", "Aerospace Engineering"],
+      "correctAnswer": "Computer Engineering",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 26,
+      "text": "What is the primary role of a civil engineer?",
+      "options": ["Design buildings", "Design airplanes", "Design vehicles", "Design electrical circuits"],
+      "correctAnswer": "Design buildings",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 27,
+      "text": "Which of the following is an example of a renewable energy source?",
+      "options": ["Geothermal", "Coal", "Natural Gas", "Nuclear"],
+      "correctAnswer": "Geothermal",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 28,
+      "text": "What does a photovoltaic cell do?",
+      "options": ["Store electrical energy", "Convert light into electricity", "Generate heat", "Amplify signals"],
+      "correctAnswer": "Convert light into electricity",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 29,
+      "text": "What is the purpose of a dam in water management?",
+      "options": ["Flood control", "Power generation", "Irrigation", "All of the above"],
+      "correctAnswer": "All of the above",
+      "material": "Engineering and Technology"
+    },
+    {
+      "id": 30,
+      "text": "Which software is used for computer-aided design (CAD)?",
+      "options": ["AutoCAD", "Photoshop", "Illustrator", "Word"],
+      "correctAnswer": "AutoCAD",
+      "material": "Engineering and Technology"
+    }
+  ]
+

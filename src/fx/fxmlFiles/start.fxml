@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="809.0" style="-fx-background-color: #82C97D28;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.start">
+   <children>
+      <Button fx:id="std" layoutX="154.0" layoutY="380.0" mnemonicParsing="false" onAction="#std" prefHeight="40.0" prefWidth="127.0" text="I'm  student">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="admin" layoutX="507.0" layoutY="380.0" mnemonicParsing="false" onAction="#admin" prefHeight="40.0" prefWidth="127.0" text="I'm  admin">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <CubicCurve fx:id="curve" controlX1="-1024.800048828125" controlX2="808.43798828125" controlY1="377.53204345703125" controlY2="-255.0186004638672" endX="296.3890380859375" endY="-315.03704833984375" fill="#84c47e7d" layoutX="450.0" layoutY="277.0" startX="-398.887939453125" startY="-344.6370544433594" stroke="#82c77d00" />
+      <ImageView fx:id="stdd" fitHeight="183.0" fitWidth="240.0" layoutX="127.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/graduated.png" />
+         </image></ImageView>
+      <ImageView fx:id="Admin" fitHeight="183.0" fitWidth="246.0" layoutX="479.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/admin.png" />
+         </image></ImageView>
+      <Label fx:id="title" layoutX="56.0" layoutY="37.0" prefHeight="40.0" prefWidth="191.0" stylesheets="@../../../../OnlineExamanitionSystem/src/fx/styles/start.css" text="AchievePlus">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="50.0" layoutY="84.0" prefHeight="20.0" prefWidth="282.0" text=" Your Gateway to Smarter Learning">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../styles/start.css" />
+      <URL value="@../styles/start.css" />
+   </stylesheets>
+</AnchorPane>

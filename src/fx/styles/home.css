@@ -1,0 +1,48 @@
+
+.button:hover{
+    -fx-text-fill: white;
+}
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-size:14px;
+
+}
+.label{
+    -fx-background-color: rgba(130, 201, 125, 0.64);
+    -fx-text-fill: black;
+    -fx-font-family: "Times New Roman";
+}
+#label,#label1{
+    -fx-background-color:transparent;
+    -fx-text-fill: black;
+    -fx-font-family: "Times New Roman";
+}
+#startexam:hover{
+    -fx-background-color: rgba(18, 23, 18, 0.49);
+    -fx-text-fill: rgb(255, 255, 255);
+}
+#startexam {
+    -fx-background-color: rgba(130, 201, 125, 0.64);
+    -fx-text-fill: black;
+    -fx-font-size:14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-background-radius:30px;
+
+}
+#curve,#title,#title1{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+}
+#exams {
+    -fx-background-color: transparent;
+    -fx-text-fill: #444;
+    -fx-border-radius: 0px;
+}
+
+#exams:hover {
+    -fx-text-fill: rgba(130, 201, 125, 0.64);
+
+}
+#title,#namestd{
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="809.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.login">
+
+   <children>
+      <Pane layoutY="-1.0" prefHeight="498.0" prefWidth="826.0" stylesheets="@../../../../OnlineExamanitionSystem/src/fx/styles/style.css">
+         <children>
+            <Arc fx:id="Arc2" fill="#82c97d" layoutX="842.0" layoutY="265.0" length="180.0" opacity="0.25" radiusX="283.0" radiusY="272.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="Arc1" fill="#82c97d" layoutX="850.0" layoutY="256.0" length="180.0" opacity="0.44" radiusX="219.0" radiusY="257.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+            <Arc fx:id="Arc" fill="#82c97d" layoutX="850.0" layoutY="256.0" length="180.0" opacity="0.36" radiusX="349.0" radiusY="316.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+            <ImageView fx:id="iconn" fitHeight="187.0" fitWidth="182.0" layoutX="576.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/graduation.png" />
+               </image></ImageView>
+            <PasswordField fx:id="pass" layoutX="115.0" layoutY="251.0" prefHeight="34.0" prefWidth="308.0" promptText="Password" />
+            <TextField fx:id="user" layoutX="115.0" layoutY="192.0" prefHeight="34.0" prefWidth="308.0" promptText="User Name " />
+            <Button fx:id="loginbtn" layoutX="196.0" layoutY="327.0" mnemonicParsing="false" onAction="#loginbtn" prefHeight="34.0" prefWidth="146.0" styleClass="loginbtn" stylesheets="@../../../../OnlineExamanitionSystem/src/fx/styles/style.css" text="Login" />
+            <AnchorPane fx:id="navbar" layoutX="135.0" layoutY="128.0" prefHeight="34.0" prefWidth="267.0">
+               <children>
+                  <Button fx:id="login" layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="126.0" text="Login">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="signup" layoutX="134.0" layoutY="1.0" mnemonicParsing="false" onAction="#signup" prefHeight="26.0" prefWidth="126.0" text="Sign Up">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label fx:id="status" layoutX="115.0" layoutY="400.0" prefHeight="43.0" prefWidth="308.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" wrapText="true" />
+            <Button fx:id="arrow" layoutX="27.0" layoutY="36.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="62.0" text="←">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

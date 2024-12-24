@@ -1,0 +1,193 @@
+[ {
+  "id" : 1,
+  "text" : "What is the normal range for human body temperature?",
+  "options" : [ "36°C to 37°C", "37°C to 38°C", "35°C to 36°C", "38°C to 39°C" ],
+  "correctAnswer" : "36°C to 37°C",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 2,
+  "text" : "Which organ is responsible for filtering blood in the human body?",
+  "options" : [ "Kidney", "Liver", "Heart", "Lungs" ],
+  "correctAnswer" : "Kidney",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 3,
+  "text" : "What is the medical term for high blood pressure?",
+  "options" : [ "Hypertension", "Hypotension", "Hyperglycemia", "Hyperthermia" ],
+  "correctAnswer" : "Hypertension",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 4,
+  "text" : "What is the function of red blood cells?",
+  "options" : [ "Carry oxygen", "Fight infections", "Clot blood", "Regulate body temperature" ],
+  "correctAnswer" : "Carry oxygen",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 5,
+  "text" : "Which part of the brain controls breathing and heartbeat?",
+  "options" : [ "Medulla Oblongata", "Cerebellum", "Thalamus", "Cortex" ],
+  "correctAnswer" : "Medulla Oblongata",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 6,
+  "text" : "Which vitamin is essential for the absorption of calcium?",
+  "options" : [ "Vitamin D", "Vitamin C", "Vitamin A", "Vitamin B12" ],
+  "correctAnswer" : "Vitamin D",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 7,
+  "text" : "What is the most common cause of a stroke?",
+  "options" : [ "Blockage of blood flow", "High blood sugar", "Brain tumor", "Low iron levels" ],
+  "correctAnswer" : "Blockage of blood flow",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 8,
+  "text" : "What is the function of the pancreas in the human body?",
+  "options" : [ "Insulin production", "Oxygen transport", "Waste filtration", "Regulation of temperature" ],
+  "correctAnswer" : "Insulin production",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 9,
+  "text" : "What is the medical term for the process of breathing?",
+  "options" : [ "Respiration", "Inhalation", "Exhalation", "Oxygenation" ],
+  "correctAnswer" : "Respiration",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 10,
+  "text" : "Which type of blood vessel carries oxygen-rich blood from the heart?",
+  "options" : [ "Artery", "Vein", "Capillary", "Lymph vessel" ],
+  "correctAnswer" : "Artery",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 11,
+  "text" : "Which condition is caused by insufficient insulin production?",
+  "options" : [ "Diabetes", "Hypertension", "Asthma", "Anemia" ],
+  "correctAnswer" : "Diabetes",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 12,
+  "text" : "What is the primary function of the liver?",
+  "options" : [ "Detoxification", "Protein synthesis", "Oxygen transport", "Blood clotting" ],
+  "correctAnswer" : "Detoxification",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 13,
+  "text" : "What type of cancer originates in the lungs?",
+  "options" : [ "Lung cancer", "Brain cancer", "Breast cancer", "Skin cancer" ],
+  "correctAnswer" : "Lung cancer",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 14,
+  "text" : "What is the main component of human bones?",
+  "options" : [ "Calcium", "Phosphorus", "Iron", "Magnesium" ],
+  "correctAnswer" : "Calcium",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 15,
+  "text" : "Which part of the eye is responsible for controlling the amount of light entering?",
+  "options" : [ "Pupil", "Lens", "Cornea", "Retina" ],
+  "correctAnswer" : "Pupil",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 16,
+  "text" : "What is the term for a heart attack?",
+  "options" : [ "Myocardial infarction", "Angina", "Aneurysm", "Arrhythmia" ],
+  "correctAnswer" : "Myocardial infarction",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 17,
+  "text" : "Which blood type is considered the universal donor?",
+  "options" : [ "O-", "AB+", "A+", "B-" ],
+  "correctAnswer" : "O-",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 18,
+  "text" : "Which organ is affected by cirrhosis?",
+  "options" : [ "Liver", "Heart", "Kidneys", "Lungs" ],
+  "correctAnswer" : "Liver",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 19,
+  "text" : "What is the function of the immune system?",
+  "options" : [ "Fight infections", "Regulate hormones", "Digest food", "Transport oxygen" ],
+  "correctAnswer" : "Fight infections",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 20,
+  "text" : "What is the name of the condition where blood clot forms in a deep vein?",
+  "options" : [ "Deep vein thrombosis", "Pulmonary embolism", "Varicose veins", "Stroke" ],
+  "correctAnswer" : "Deep vein thrombosis",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 21,
+  "text" : "Which of the following diseases is caused by a virus?",
+  "options" : [ "Tuberculosis", "Influenza", "Malaria", "Tetanus" ],
+  "correctAnswer" : "Influenza",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 22,
+  "text" : "What is the term for an excessive accumulation of fat in the body?",
+  "options" : [ "Obesity", "Anorexia", "Edema", "Cachexia" ],
+  "correctAnswer" : "Obesity",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 23,
+  "text" : "Which hormone regulates blood sugar levels?",
+  "options" : [ "Insulin", "Cortisol", "Adrenaline", "Thyroxine" ],
+  "correctAnswer" : "Insulin",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 24,
+  "text" : "What is the term for a condition where the body’s immune system attacks its own tissues?",
+  "options" : [ "Autoimmune disease", "Infectious disease", "Inflammatory disease", "Neurodegenerative disease" ],
+  "correctAnswer" : "Autoimmune disease",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 25,
+  "text" : "Which vitamin is crucial for the prevention of scurvy?",
+  "options" : [ "Vitamin C", "Vitamin D", "Vitamin A", "Vitamin B12" ],
+  "correctAnswer" : "Vitamin C",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 26,
+  "text" : "Which of the following is a common symptom of pneumonia?",
+  "options" : [ "Coughing", "Fever", "Shortness of breath", "All of the above" ],
+  "correctAnswer" : "All of the above",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 27,
+  "text" : "What is the term for the process by which the body maintains a stable internal environment?",
+  "options" : [ "Homeostasis", "Metabolism", "Diffusion", "Osmosis" ],
+  "correctAnswer" : "Homeostasis",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 28,
+  "text" : "What is the normal heart rate for a resting adult?",
+  "options" : [ "60-100 bpm", "40-60 bpm", "100-120 bpm", "120-140 bpm" ],
+  "correctAnswer" : "60-100 bpm",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 29,
+  "text" : "Which disease is caused by a lack of iodine?",
+  "options" : [ "Goiter", "Anemia", "Scurvy", "Beriberi" ],
+  "correctAnswer" : "Goiter",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 30,
+  "text" : "What is the name of the process through which cells divide to form two identical daughter cells?",
+  "options" : [ "Mitosis", "Meiosis", "Binary fission", "Cell differentiation" ],
+  "correctAnswer" : "Mitosis",
+  "material" : "Medicine and Health Sciences"
+}, {
+  "id" : 45,
+  "text" : "",
+  "options" : [ "", "", "", "" ],
+  "correctAnswer" : null,
+  "material" : "medicine"
+}, {
+  "id" : 885,
+  "text" : "fgh",
+  "options" : [ "sdfg", "sd", "dfg", "dfg" ],
+  "correctAnswer" : "dfg",
+  "material" : "medicine"
+} ]

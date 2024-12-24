@@ -1,0 +1,322 @@
+ [
+    {
+      "id": 1,
+      "text": "What is the primary purpose of mass communication?",
+      "options": ["To reach a large audience", "To facilitate private conversations", "To enhance one-on-one interactions", "To store data"],
+      "correctAnswer": "To reach a large audience",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 2,
+      "text": "Which of the following is considered traditional media?",
+      "options": ["Newspapers", "Social Media", "Websites", "Mobile Apps"],
+      "correctAnswer": "Newspapers",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 3,
+      "text": "What does the term 'media convergence' refer to?",
+      "options": [
+        "The merging of different media platforms",
+        "The decline of print media",
+        "The use of smartphones",
+        "The creation of viral content"
+      ],
+      "correctAnswer": "The merging of different media platforms",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 4,
+      "text": "Which theory suggests that media shapes how we perceive the world?",
+      "options": ["Framing Theory", "Uses and Gratifications Theory", "Hypodermic Needle Theory", "Agenda-Setting Theory"],
+      "correctAnswer": "Agenda-Setting Theory",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 5,
+      "text": "What is the primary role of a journalist?",
+      "options": [
+        "To report and analyze current events",
+        "To entertain audiences",
+        "To create advertising campaigns",
+        "To promote political parties"
+      ],
+      "correctAnswer": "To report and analyze current events",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 6,
+      "text": "What does 'broadcasting' refer to in media?",
+      "options": [
+        "Distributing content to a broad audience via television or radio",
+        "Publishing articles in a newspaper",
+        "Uploading videos to a private channel",
+        "Sharing posts on social media"
+      ],
+      "correctAnswer": "Distributing content to a broad audience via television or radio",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 7,
+      "text": "What is the purpose of public relations (PR)?",
+      "options": [
+        "To manage the reputation of an individual or organization",
+        "To create viral content",
+        "To design advertisements",
+        "To report breaking news"
+      ],
+      "correctAnswer": "To manage the reputation of an individual or organization",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 8,
+      "text": "What is 'media literacy'?",
+      "options": [
+        "The ability to critically analyze and interpret media content",
+        "The ability to create media content",
+        "The technical skill to use cameras",
+        "The study of journalism"
+      ],
+      "correctAnswer": "The ability to critically analyze and interpret media content",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 9,
+      "text": "What does the term 'target audience' mean?",
+      "options": [
+        "A specific group of people a message is aimed at",
+        "The largest group reached by a message",
+        "A random group selected for research",
+        "The people who reject media messages"
+      ],
+      "correctAnswer": "A specific group of people a message is aimed at",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 10,
+      "text": "Which of the following is an example of new media?",
+      "options": ["Podcasts", "Radio", "Magazines", "Television"],
+      "correctAnswer": "Podcasts",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 11,
+      "text": "What does 'fake news' refer to?",
+      "options": [
+        "Deliberately false information presented as news",
+        "News that is difficult to understand",
+        "Old news that is no longer relevant",
+        "Satirical news articles"
+      ],
+      "correctAnswer": "Deliberately false information presented as news",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 12,
+      "text": "What is the primary goal of advertising?",
+      "options": [
+        "To persuade audiences to purchase a product or service",
+        "To educate the public about global issues",
+        "To report accurate news",
+        "To entertain through storytelling"
+      ],
+      "correctAnswer": "To persuade audiences to purchase a product or service",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 13,
+      "text": "What is the difference between interpersonal and mass communication?",
+      "options": [
+        "Interpersonal is one-on-one, while mass is one-to-many",
+        "Interpersonal uses technology, while mass does not",
+        "Interpersonal is faster than mass",
+        "Interpersonal is always private, while mass is public"
+      ],
+      "correctAnswer": "Interpersonal is one-on-one, while mass is one-to-many",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 14,
+      "text": "What does the term 'bias in media' mean?",
+      "options": [
+        "A preference or prejudice in presenting news",
+        "An error in publishing articles",
+        "The delay in breaking news",
+        "The use of technical jargon in reports"
+      ],
+      "correctAnswer": "A preference or prejudice in presenting news",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 15,
+      "text": "What is the role of a content creator?",
+      "options": [
+        "To produce original material for online platforms",
+        "To design traditional advertisements",
+        "To manage public relations",
+        "To write editorials"
+      ],
+      "correctAnswer": "To produce original material for online platforms",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 16,
+      "text": "What does 'viral content' refer to?",
+      "options": [
+        "Content that spreads rapidly online",
+        "Content about infectious diseases",
+        "Content shared on radio",
+        "Content published in print media"
+      ],
+      "correctAnswer": "Content that spreads rapidly online",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 17,
+      "text": "What is a documentary?",
+      "options": [
+        "A factual film about real-life events or subjects",
+        "A scripted movie",
+        "A live sports broadcast",
+        "An animated video"
+      ],
+      "correctAnswer": "A factual film about real-life events or subjects",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 18,
+      "text": "What is the term for the first draft of a news story?",
+      "options": ["Copy", "Manuscript", "Script", "Synopsis"],
+      "correctAnswer": "Copy",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 19,
+      "text": "Which of the following is an example of visual communication?",
+      "options": ["Infographics", "Podcasts", "Radio Ads", "Blog Posts"],
+      "correctAnswer": "Infographics",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 20,
+      "text": "What is a podcast?",
+      "options": [
+        "An audio program available on-demand online",
+        "A live video broadcast",
+        "A print magazine",
+        "A type of email newsletter"
+      ],
+      "correctAnswer": "An audio program available on-demand online",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 21,
+      "text": "Which of the following is an ethical concern in media?",
+      "options": [
+        "Plagiarism",
+        "Using high-quality graphics",
+        "Having a wide audience reach",
+        "Publishing global news"
+      ],
+      "correctAnswer": "Plagiarism",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 22,
+      "text": "What is a press release?",
+      "options": [
+        "A statement issued to the media by an organization",
+        "A newspaper editorial",
+        "A live news report",
+        "An advertisement on social media"
+      ],
+      "correctAnswer": "A statement issued to the media by an organization",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 23,
+      "text": "Which of the following best defines a 'media campaign'?",
+      "options": [
+        "A series of coordinated efforts to communicate a message",
+        "A single article published in a magazine",
+        "A viral post on social media",
+        "A breaking news report"
+      ],
+      "correctAnswer": "A series of coordinated efforts to communicate a message",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 24,
+      "text": "What does 'SEO' stand for in digital communication?",
+      "options": [
+        "Search Engine Optimization",
+        "Social Engagement Online",
+        "Systematic Evaluation Online",
+        "Secure Email Operations"
+      ],
+      "correctAnswer": "Search Engine Optimization",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 25,
+      "text": "Which of the following is NOT a characteristic of digital media?",
+      "options": [
+        "Interactive content",
+        "Static communication",
+        "Real-time updates",
+        "Global reach"
+      ],
+      "correctAnswer": "Static communication",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 26,
+      "text": "What is the term for unauthorized use of copyrighted material in media?",
+      "options": ["Copyright infringement", "Creative commons", "Plagiarism", "Public domain"],
+      "correctAnswer": "Copyright infringement",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 27,
+      "text": "What is the role of a producer in media production?",
+      "options": [
+        "Overseeing the production process and managing resources",
+        "Acting in front of the camera",
+        "Editing videos",
+        "Writing scripts"
+      ],
+      "correctAnswer": "Overseeing the production process and managing resources",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 28,
+      "text": "What does 'citizen journalism' refer to?",
+      "options": [
+        "News reported by ordinary individuals",
+        "A specific type of newspaper reporting",
+        "A branch of journalism studies",
+        "News coverage from small towns"
+      ],
+      "correctAnswer": "News reported by ordinary individuals",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 29,
+      "text": "What is an editorial in journalism?",
+      "options": [
+        "An opinion piece written by the publication's editors",
+        "A report on a specific event",
+        "A headline of a news story",
+        "A classified advertisement"
+      ],
+      "correctAnswer": "An opinion piece written by the publication's editors",
+      "material": "Media and Communication"
+    },
+    {
+      "id": 30,
+      "text": "What is the term for a journalist's collection of their published work?",
+      "options": ["Portfolio", "Resume", "Feature", "Chronicle"],
+      "correctAnswer": "Portfolio",
+      "material": "Media and Communication"
+    }
+  ]

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.signup">
+
+    <children>
+        <Pane fx:id="upscene" layoutX="-1.0" layoutY="-1.0" prefHeight="498.0" prefWidth="826.0" stylesheets="@../styles/up.css">
+            <children>
+                <Arc fx:id="Arc2" fill="#82c97d" layoutX="842.0" layoutY="265.0" length="180.0" opacity="0.25" radiusX="283.0" radiusY="272.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                <Arc fx:id="Arc1" fill="#82c97d" layoutX="850.0" layoutY="256.0" length="180.0" opacity="0.44" radiusX="219.0" radiusY="257.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                <Arc fx:id="Arc" fill="#82c97d" layoutX="850.0" layoutY="256.0" length="180.0" opacity="0.36" radiusX="349.0" radiusY="316.0" startAngle="90.0" stroke="TRANSPARENT" strokeType="INSIDE" type="ROUND" />
+                <ImageView fx:id="iconn" fitHeight="187.0" fitWidth="182.0" layoutX="585.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/graduation.png" />
+               </image></ImageView>
+                <PasswordField fx:id="passup" layoutX="26.0" layoutY="303.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="Password" />
+                <Button fx:id="signup1" layoutX="197.0" layoutY="384.0" mnemonicParsing="false" onAction="#signup" prefHeight="34.0" prefWidth="146.0" styleClass="loginbtn" stylesheets="@../../../../OnlineExamanitionSystem/src/fx/styles/style.css" text="Sign Up" />
+                <TextField fx:id="last" layoutX="26.0" layoutY="148.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="Last Name" />
+                <Button fx:id="loginbtn" layoutX="26.0" layoutY="388.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="126.0" text="Back to login" />
+                <PasswordField fx:id="passin1" layoutX="26.0" layoutY="340.0" onAction="#signup" prefHeight="19.0" prefWidth="308.0" promptText="Verify Password" />
+                <TextField fx:id="userup" layoutX="26.0" layoutY="189.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="User Name" />
+                <TextField fx:id="first" layoutX="26.0" layoutY="103.0" onAction="#signup" prefHeight="25.0" prefWidth="308.0" promptText="First Name" />
+                <Label layoutX="35.0" layoutY="40.0" text="Sign Up " textAlignment="CENTER">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="email" layoutX="26.0" layoutY="226.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="email address" />
+            <TextField fx:id="phonenum" layoutX="26.0" layoutY="265.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="phone number" />
+            <Label fx:id="signupstatus" layoutX="43.0" layoutY="440.0" prefHeight="34.0" prefWidth="308.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,187 @@
+[ {
+  "id" : 1,
+  "text" : "What is the Big O notation of binary search in the worst-case scenario?",
+  "options" : [ "O(n)", "O(log n)", "O(n^2)", "O(1)" ],
+  "correctAnswer" : "O(log n)",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 2,
+  "text" : "Which programming paradigm focuses on objects and their interactions?",
+  "options" : [ "Functional programming", "Object-oriented programming", "Procedural programming", "Logic programming" ],
+  "correctAnswer" : "Object-oriented programming",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 3,
+  "text" : "What is the main function of a DNS (Domain Name System)?",
+  "options" : [ "Resolve IP addresses to domain names", "Encrypt internet traffic", "Monitor internet usage", "Allocate bandwidth" ],
+  "correctAnswer" : "Resolve IP addresses to domain names",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 4,
+  "text" : "Which data structure is used in the implementation of a stack?",
+  "options" : [ "Array", "Queue", "Tree", "Graph" ],
+  "correctAnswer" : "Array",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 5,
+  "text" : "What is the primary role of an operating system?",
+  "options" : [ "Manage hardware and software resources", "Run database queries", "Host websites", "Encrypt data" ],
+  "correctAnswer" : "Manage hardware and software resources",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 6,
+  "text" : "What does SQL stand for?",
+  "options" : [ "Structured Query Language", "System Query Language", "Sequential Query Logic", "Structured Question Logic" ],
+  "correctAnswer" : "Structured Query Language",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 7,
+  "text" : "What is a primary key in a database?",
+  "options" : [ "A unique identifier for a record", "A link to another table", "A function to encrypt data", "A query optimization technique" ],
+  "correctAnswer" : "A unique identifier for a record",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 8,
+  "text" : "Which algorithm is used for shortest path finding in a graph?",
+  "options" : [ "Dijkstra's algorithm", "Merge sort", "Quick sort", "Knuth–Morris–Pratt algorithm" ],
+  "correctAnswer" : "Dijkstra's algorithm",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 9,
+  "text" : "What is the primary purpose of a firewall?",
+  "options" : [ "Block unauthorized access", "Encrypt user data", "Manage database queries", "Optimize system performance" ],
+  "correctAnswer" : "Block unauthorized access",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 10,
+  "text" : "Which of the following is a NoSQL database?",
+  "options" : [ "MongoDB", "MySQL", "PostgreSQL", "SQLite" ],
+  "correctAnswer" : "MongoDB",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 11,
+  "text" : "What is the function of the TCP protocol in networking?",
+  "options" : [ "Ensure reliable data transmission", "Encrypt data packets", "Assign IP addresses", "Monitor network traffic" ],
+  "correctAnswer" : "Ensure reliable data transmission",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 12,
+  "text" : "What does the acronym API stand for?",
+  "options" : [ "Application Programming Interface", "Application Process Integration", "Automated Programming Instructions", "Abstract Protocol Interface" ],
+  "correctAnswer" : "Application Programming Interface",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 13,
+  "text" : "Which sorting algorithm has the best time complexity of O(n log n)?",
+  "options" : [ "Merge Sort", "Bubble Sort", "Insertion Sort", "Selection Sort" ],
+  "correctAnswer" : "Merge Sort",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 14,
+  "text" : "What is the purpose of a compiler?",
+  "options" : [ "Convert source code into machine code", "Debug a program", "Execute programs", "Monitor memory usage" ],
+  "correctAnswer" : "Convert source code into machine code",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 15,
+  "text" : "What is the primary role of a cache memory in a computer system?",
+  "options" : [ "Speed up data access", "Store permanent data", "Encrypt sensitive information", "Provide additional RAM" ],
+  "correctAnswer" : "Speed up data access",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 16,
+  "text" : "What is the difference between IPv4 and IPv6?",
+  "options" : [ "IPv6 has a larger address space", "IPv4 is more secure", "IPv6 uses 32-bit addresses", "IPv4 supports multicast addressing" ],
+  "correctAnswer" : "IPv6 has a larger address space",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 17,
+  "text" : "Which programming language is known for its simplicity and readability?",
+  "options" : [ "Python", "C++", "Java", "Assembly" ],
+  "correctAnswer" : "Python",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 18,
+  "text" : "What is a key feature of cloud computing?",
+  "options" : [ "On-demand resource availability", "Local data storage", "Offline processing", "Fixed hardware requirements" ],
+  "correctAnswer" : "On-demand resource availability",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 19,
+  "text" : "What is the purpose of a virtual machine?",
+  "options" : [ "Simulate a physical computer", "Manage network connections", "Optimize storage performance", "Encrypt data" ],
+  "correctAnswer" : "Simulate a physical computer",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 20,
+  "text" : "What does CRUD stand for in database operations?",
+  "options" : [ "Create, Read, Update, Delete", "Create, Run, Utilize, Debug", "Cache, Read, Use, Deploy", "Compile, Run, Update, Delete" ],
+  "correctAnswer" : "Create, Read, Update, Delete",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 21,
+  "text" : "What is the purpose of the HTTPS protocol?",
+  "options" : [ "Secure data transmission over the web", "Monitor internet traffic", "Compress web content", "Optimize website performance" ],
+  "correctAnswer" : "Secure data transmission over the web",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 22,
+  "text" : "Which of the following is a dynamically-typed programming language?",
+  "options" : [ "Python", "Java", "C#", "C++" ],
+  "correctAnswer" : "Python",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 23,
+  "text" : "What is the primary function of a load balancer?",
+  "options" : [ "Distribute network traffic", "Encrypt user data", "Host virtual machines", "Optimize memory usage" ],
+  "correctAnswer" : "Distribute network traffic",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 24,
+  "text" : "Which term refers to the smallest unit of information in computing?",
+  "options" : [ "Bit", "Byte", "Nibble", "Word" ],
+  "correctAnswer" : "Bit",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 25,
+  "text" : "What is an example of a distributed version control system?",
+  "options" : [ "Git", "FTP", "HTTP", "SMTP" ],
+  "correctAnswer" : "Git",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 26,
+  "text" : "What does 'inheritance' refer to in object-oriented programming?",
+  "options" : [ "Acquiring properties from a parent class", "Reusing code from another program", "Writing modular code", "Overloading operators" ],
+  "correctAnswer" : "Acquiring properties from a parent class",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 27,
+  "text" : "Which hashing algorithm is commonly used for data integrity?",
+  "options" : [ "SHA-256", "MD5", "DES", "AES" ],
+  "correctAnswer" : "SHA-256",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 28,
+  "text" : "Which of the following is a markup language?",
+  "options" : [ "HTML", "Python", "SQL", "C++" ],
+  "correctAnswer" : "HTML",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 29,
+  "text" : "Which tool is used for containerization in software development?",
+  "options" : [ "Docker", "Git", "Jenkins", "Kubernetes" ],
+  "correctAnswer" : "Docker",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 30,
+  "text" : "What is a linked list?",
+  "options" : [ "A linear data structure where elements are linked using pointers", "A list stored in a hash table", "A collection of sorted elements", "A dynamic array of elements" ],
+  "correctAnswer" : "A linear data structure where elements are linked using pointers",
+  "material" : "Computer Science and Information Technology"
+}, {
+  "id" : 258,
+  "text" : "nnnnn",
+  "options" : [ "qw", "qw", "er", "ty" ],
+  "correctAnswer" : "qw",
+  "material" : "Computer Science"
+} ]

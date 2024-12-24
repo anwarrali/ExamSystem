@@ -1,0 +1,30 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 30px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.1s ease-in-out;
+}
+.button:hover{
+    -fx-text-fill: rgba(130, 201, 125, 0.64);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+.label{
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 13px;
+}
+#pane{
+    -fx-background-color: rgba(130, 201, 125, 0.16);
+}

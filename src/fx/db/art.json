@@ -1,0 +1,227 @@
+ [
+    {
+      "id": 1,
+      "text": "What is the term for a painting done on wet plaster?",
+      "options": ["Fresco", "Oil Painting", "Watercolor", "Acrylic"],
+      "correctAnswer": "Fresco",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 2,
+      "text": "Which art movement is Salvador Dalí associated with?",
+      "options": ["Surrealism", "Cubism", "Impressionism", "Expressionism"],
+      "correctAnswer": "Surrealism",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 3,
+      "text": "What is the primary tool used for sculpting marble?",
+      "options": ["Chisel", "Brush", "Needle", "Compass"],
+      "correctAnswer": "Chisel",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 4,
+      "text": "In graphic design, what does RGB stand for?",
+      "options": ["Red, Green, Blue", "Red, Gray, Black", "Red, Gold, Beige", "Rose, Green, Black"],
+      "correctAnswer": "Red, Green, Blue",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 5,
+      "text": "What is the golden ratio often used for in art and design?",
+      "options": ["Achieving aesthetic balance", "Measuring canvas size", "Mixing colors", "Selecting brushes"],
+      "correctAnswer": "Achieving aesthetic balance",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 6,
+      "text": "Which Renaissance artist painted the Sistine Chapel ceiling?",
+      "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+      "correctAnswer": "Michelangelo",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 7,
+      "text": "What is a typeface?",
+      "options": ["A design for a set of characters", "A graphic editing tool", "A sculpture style", "A painting technique"],
+      "correctAnswer": "A design for a set of characters",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 8,
+      "text": "Which of the following is an example of abstract art?",
+      "options": ["Piet Mondrian's 'Composition'", "Leonardo's 'Mona Lisa'", "Michelangelo's 'David'", "Van Gogh's 'Starry Night'"],
+      "correctAnswer": "Piet Mondrian's 'Composition'",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 9,
+      "text": "What is the term for the arrangement of visual elements in a work of art?",
+      "options": ["Composition", "Perspective", "Form", "Texture"],
+      "correctAnswer": "Composition",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 10,
+      "text": "Which art movement is characterized by vibrant colors and bold brush strokes?",
+      "options": ["Impressionism", "Fauvism", "Cubism", "Realism"],
+      "correctAnswer": "Fauvism",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 11,
+      "text": "What does the term 'negative space' refer to in design?",
+      "options": [
+        "The space around and between subjects",
+        "The dark areas of a composition",
+        "Unused colors in a palette",
+        "The back side of a canvas"
+      ],
+      "correctAnswer": "The space around and between subjects",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 12,
+      "text": "What is a primary color in art?",
+      "options": ["A color that cannot be created by mixing others", "A dominant color in a painting", "A shadow color", "A blended color"],
+      "correctAnswer": "A color that cannot be created by mixing others",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 13,
+      "text": "What is the term for the tactile quality of a surface?",
+      "options": ["Texture", "Form", "Depth", "Hue"],
+      "correctAnswer": "Texture",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 14,
+      "text": "Which design principle focuses on creating differences to highlight elements?",
+      "options": ["Contrast", "Harmony", "Balance", "Proportion"],
+      "correctAnswer": "Contrast",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 15,
+      "text": "What is the term for art created using computer software?",
+      "options": ["Digital art", "Abstract art", "Fine art", "Conceptual art"],
+      "correctAnswer": "Digital art",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 16,
+      "text": "What does the term 'perspective' in art refer to?",
+      "options": ["The illusion of depth and space", "The balance of colors", "The size of the canvas", "The brush technique used"],
+      "correctAnswer": "The illusion of depth and space",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 17,
+      "text": "What is the name for a preliminary drawing or sketch?",
+      "options": ["Study", "Print", "Prototype", "Mosaic"],
+      "correctAnswer": "Study",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 18,
+      "text": "What does 'chiaroscuro' refer to in painting?",
+      "options": [
+        "The contrast between light and dark",
+        "The blending of colors",
+        "The layering of paint",
+        "The choice of subject"
+      ],
+      "correctAnswer": "The contrast between light and dark",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 19,
+      "text": "Which artist is known for the 'Blue Period'?",
+      "options": ["Pablo Picasso", "Claude Monet", "Vincent van Gogh", "Edvard Munch"],
+      "correctAnswer": "Pablo Picasso",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 20,
+      "text": "What is the process of creating a print by carving into a surface?",
+      "options": ["Engraving", "Painting", "Sketching", "Watercoloring"],
+      "correctAnswer": "Engraving",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 21,
+      "text": "Which of these is a medium of sculpture?",
+      "options": ["Clay", "Oil Paint", "Pencil", "Canvas"],
+      "correctAnswer": "Clay",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 22,
+      "text": "What is the process of applying paint in thick layers called?",
+      "options": ["Impasto", "Glazing", "Wash", "Stippling"],
+      "correctAnswer": "Impasto",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 23,
+      "text": "What does the term 'monochromatic' mean in art?",
+      "options": [
+        "Using only one color and its shades",
+        "Using black and white",
+        "Using all primary colors",
+        "Using warm tones"
+      ],
+      "correctAnswer": "Using only one color and its shades",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 24,
+      "text": "Who painted the famous artwork 'The Starry Night'?",
+      "options": ["Vincent van Gogh", "Claude Monet", "Pablo Picasso", "Leonardo da Vinci"],
+      "correctAnswer": "Vincent van Gogh",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 25,
+      "text": "What is the term for a three-dimensional work of art?",
+      "options": ["Sculpture", "Relief", "Mural", "Fresco"],
+      "correctAnswer": "Sculpture",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 26,
+      "text": "Which artist is famous for painting water lilies?",
+      "options": ["Claude Monet", "Henri Matisse", "Pablo Picasso", "Edgar Degas"],
+      "correctAnswer": "Claude Monet",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 27,
+      "text": "What is a mandala?",
+      "options": ["A geometric design often used in meditation", "A type of paint", "A sculpting tool", "A drawing technique"],
+      "correctAnswer": "A geometric design often used in meditation",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 28,
+      "text": "Which of the following is a printmaking technique?",
+      "options": ["Lithography", "Chiaroscuro", "Stippling", "Fresco"],
+      "correctAnswer": "Lithography",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 29,
+      "text": "What is a focal point in art?",
+      "options": ["The main subject or area of interest", "The size of the artwork", "The frame used", "The materials chosen"],
+      "correctAnswer": "The main subject or area of interest",
+      "material": "Arts and Design"
+    },
+    {
+      "id": 30,
+      "text": "Which art movement is characterized by spontaneity and abstract shapes?",
+      "options": ["Abstract Expressionism", "Realism", "Baroque", "Neo-Classicism"],
+      "correctAnswer": "Abstract Expressionism",
+      "material": "Arts and Design"
+    }
+  ]

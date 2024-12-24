@@ -1,0 +1,567 @@
+[
+  {
+    "id": 1,
+    "text": "Which of the following is not a type of chemical bond?",
+    "options": ["Covalent", "Ionic", "Electromagnetic", "Metallic"],
+    "correctAnswer": "Electromagnetic",
+    "material": "Chemistry"
+  },
+  {
+    "id": 2,
+    "text": "In which year did the First World War begin?",
+    "options": ["1910", "1912", "1914", "1916"],
+    "correctAnswer": "1914",
+    "material": "History"
+  },
+  {
+    "id": 3,
+    "text": "What is the formula for calculating speed?",
+    "options": ["Speed = Distance × Time", "Speed = Distance ÷ Time", "Speed = Time ÷ Distance", "Speed = Time × Distance"],
+    "correctAnswer": "Speed = Distance ÷ Time",
+    "material": "Physics"
+  },
+  {
+    "id": 4,
+    "text": "What is the smallest unit of an element?",
+    "options": ["Atom", "Molecule", "Proton", "Electron"],
+    "correctAnswer": "Atom",
+    "material": "Chemistry"
+  },
+  {
+    "id": 5,
+    "text": "Which of the following is a renewable energy source?",
+    "options": ["Natural gas", "Coal", "Solar energy", "Oil"],
+    "correctAnswer": "Solar energy",
+    "material": "Technology"
+  },
+  {
+    "id": 6,
+    "text": "What is the formula for the area of a circle?",
+    "options": ["πr^2", "2πr", "πd", "r^2 + d^2"],
+    "correctAnswer": "πr^2",
+    "material": "Mathematics"
+  },
+  {
+    "id": 7,
+    "text": "What is the acceleration due to gravity on Earth?",
+    "options": ["9.8 m/s²", "10 m/s²", "8.9 m/s²", "12 m/s²"],
+    "correctAnswer": "9.8 m/s²",
+    "material": "Physics"
+  },
+  {
+    "id": 8,
+    "text": "What is the primary function of a CPU in a computer?",
+    "options": [
+      "Execute instructions from programs.",
+      "Store data permanently.",
+      "Display visual content on the monitor.",
+      "Cool the system."
+    ],
+    "correctAnswer": "Execute instructions from programs.",
+    "material": "Technology"
+  },
+  {
+    "id": 9,
+    "text": "What is the solution to the quadratic equation x² - 5x + 6 = 0?",
+    "options": [
+      "x = 2 and x = 3",
+      "x = -2 and x = -3",
+      "x = 1 and x = 6",
+      "x = 0 and x = -6"
+    ],
+    "correctAnswer": "x = 2 and x = 3",
+    "material": "Mathematics"
+  },
+  {
+    "id": 10,
+    "text": "What is the formula for Ohm's law?",
+    "options": ["V = IR", "P = IV", "E = mc²", "F = ma"],
+    "correctAnswer": "V = IR",
+    "material": "Physics"
+  },
+  {
+    "id": 11,
+    "text": "Which programming language is known as the 'mother of all languages'?",
+    "options": ["C", "Assembly", "Fortran", "Java"],
+    "correctAnswer": "C",
+    "material": "Technology"
+  },
+  {
+    "id": 12,
+    "text": "Which of these is not an example of an acid?",
+    "options": ["HCl", "H₂SO₄", "NaOH", "HNO₃"],
+    "correctAnswer": "NaOH",
+    "material": "Chemistry"
+  },
+  {
+    "id": 13,
+    "text": "Which novel features the character 'Winston Smith'?",
+    "options": [
+      "Brave New World",
+      "1984",
+      "The Catcher in the Rye",
+      "The Great Gatsby"
+    ],
+    "correctAnswer": "1984",
+    "material": "Literature"
+  },
+  {
+    "id": 14,
+    "text": "What is the area of a triangle with a base of 5 cm and height of 10 cm?",
+    "options": ["25 cm²", "50 cm²", "10 cm²", "30 cm²"],
+    "correctAnswer": "25 cm²",
+    "material": "Mathematics"
+  },
+  {
+    "id": 15,
+    "text": "Who proposed the theory of general relativity?",
+    "options": ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo Galilei"],
+    "correctAnswer": "Albert Einstein",
+    "material": "Physics"
+  },
+  {
+    "id": 16,
+    "text": "What is the process by which plants produce glucose using sunlight?",
+    "options": ["Respiration", "Photosynthesis", "Fermentation", "Glycolysis"],
+    "correctAnswer": "Photosynthesis",
+    "material": "Biology"
+  },
+  {
+    "id": 17,
+    "text": "What is the derivative of sin(x)?",
+    "options": ["cos(x)", "-sin(x)", "-cos(x)", "tan(x)"],
+    "correctAnswer": "cos(x)",
+    "material": "Mathematics"
+  },
+  {
+    "id": 18,
+    "text": "Which element has the highest atomic number in the periodic table?",
+    "options": ["Uranium", "Oganesson", "Radon", "Gold"],
+    "correctAnswer": "Oganesson",
+    "material": "Chemistry"
+  },
+  {
+    "id": 19,
+    "text": "Who wrote the novel 'Pride and Prejudice'?",
+    "options": ["Emily Brontë", "Jane Austen", "George Eliot", "Mary Shelley"],
+    "correctAnswer": "Jane Austen",
+    "material": "Literature"
+  },
+  {
+    "id": 20,
+    "text": "What is the integral of 2x with respect to x?",
+    "options": ["x² + C", "2x²", "x + C", "x²"],
+    "correctAnswer": "x² + C",
+    "material": "Mathematics"
+  },
+  {
+    "id": 21,
+    "text": "Which planet has the most moons?",
+    "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
+    "correctAnswer": "Saturn",
+    "material": "Astronomy"
+  },
+  {
+    "id": 22,
+    "text": "What is the largest organ in the human body?",
+    "options": ["Heart", "Liver", "Skin", "Brain"],
+    "correctAnswer": "Skin",
+    "material": "Biology"
+  },
+  {
+    "id": 23,
+    "text": "What is the value of π (pi) to two decimal places?",
+    "options": ["3.12", "3.13", "3.14", "3.15"],
+    "correctAnswer": "3.14",
+    "material": "Mathematics"
+  },
+  {
+    "id": 24,
+    "text": "Who painted the 'Mona Lisa'?",
+    "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
+    "correctAnswer": "Leonardo da Vinci",
+    "material": "Art"
+  },
+  {
+    "id": 25,
+    "text": "What type of electromagnetic radiation has the shortest wavelength?",
+    "options": ["Radio waves", "Microwaves", "X-rays", "Gamma rays"],
+    "correctAnswer": "Gamma rays",
+    "material": "Physics"
+  },
+  {
+    "id": 26,
+    "text": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+    "correctAnswer": "Mitochondria",
+    "material": "Biology"
+  },
+  {
+    "id": 27,
+    "text": "Which Greek philosopher tutored Alexander the Great?",
+    "options": ["Socrates", "Plato", "Aristotle", "Pythagoras"],
+    "correctAnswer": "Aristotle",
+    "material": "History"
+  },
+  {
+    "id": 28,
+    "text": "What is the smallest prime number?",
+    "options": ["1", "2", "3", "5"],
+    "correctAnswer": "2",
+    "material": "Mathematics"
+  },
+  {
+    "id": 29,
+    "text": "Who is considered the father of modern computing?",
+    "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Steve Jobs"],
+    "correctAnswer": "Charles Babbage",
+    "material": "Technology"
+  },
+  {
+    "id": 30,
+    "text": "What is Newton's Third Law of Motion?",
+    "options": [
+      "An object in motion stays in motion.",
+      "Force equals mass times acceleration.",
+      "For every action, there is an equal and opposite reaction.",
+      "Energy cannot be created or destroyed."
+    ],
+    "correctAnswer": "For every action, there is an equal and opposite reaction.",
+    "material": "Physics"
+  },
+  {
+    "id": 31,
+    "text": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+    "correctAnswer": "Nitrogen",
+    "material": "Chemistry"
+  },
+  {
+    "id": 32,
+    "text": "What is the capital city of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correctAnswer": "Canberra",
+    "material": "Geography"
+  },
+  {
+    "id": 33,
+    "text": "Who wrote the play 'Hamlet'?",
+    "options": ["William Shakespeare", "Christopher Marlowe", "Ben Jonson", "John Donne"],
+    "correctAnswer": "William Shakespeare",
+    "material": "Literature"
+  },
+  {
+    "id": 34,
+    "text": "What is the standard unit of electric current?",
+    "options": ["Volt", "Ampere", "Watt", "Ohm"],
+    "correctAnswer": "Ampere",
+    "material": "Physics"
+  },
+  {
+    "id": 35,
+    "text": "Which organ is responsible for filtering blood in the human body?",
+    "options": ["Heart", "Kidney", "Liver", "Lungs"],
+    "correctAnswer": "Kidney",
+    "material": "Biology"
+  },
+  {
+    "id": 36,
+    "text": "What is the SI unit of pressure?",
+    "options": ["Newton", "Pascal", "Joule", "Watt"],
+    "correctAnswer": "Pascal",
+    "material": "Physics"
+  },
+  {
+    "id": 37,
+    "text": "Which ancient civilization built the pyramids?",
+    "options": ["Mesopotamian", "Egyptian", "Greek", "Roman"],
+    "correctAnswer": "Egyptian",
+    "material": "History"
+  },
+  {
+    "id": 38,
+    "text": "Which part of the electromagnetic spectrum is visible to the human eye?",
+    "options": ["Infrared", "Ultraviolet", "Visible light", "Microwaves"],
+    "correctAnswer": "Visible light",
+    "material": "Physics"
+  },
+  {
+    "id": 39,
+    "text": "What is the chemical formula for water?",
+    "options": ["H₂O", "CO₂", "O₂", "H₂SO₄"],
+    "correctAnswer": "H₂O",
+    "material": "Chemistry"
+  },
+  {
+    "id": 40,
+    "text": "Who discovered penicillin?",
+    "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Gregor Mendel"],
+    "correctAnswer": "Alexander Fleming",
+    "material": "Biology"
+  },
+  {
+    "id": 41,
+    "text": "What is the sum of the angles in a triangle?",
+    "options": ["180°", "360°", "90°", "270°"],
+    "correctAnswer": "180°",
+    "material": "Mathematics"
+  },
+  {
+    "id": 42,
+    "text": "What does DNA stand for?",
+    "options": [
+      "Deoxyribonucleic Acid",
+      "Deoxyribosome Acid",
+      "Dioxyribonucleic Acid",
+      "Deoxyribose Nucleic Acid"
+    ],
+    "correctAnswer": "Deoxyribonucleic Acid",
+    "material": "Biology"
+  },
+  {
+    "id": 43,
+    "text": "What is the freezing point of water in Celsius?",
+    "options": ["0°C", "100°C", "-10°C", "32°C"],
+    "correctAnswer": "0°C",
+    "material": "Physics"
+  },
+  {
+    "id": 44,
+    "text": "What is the binary equivalent of the decimal number 10?",
+    "options": ["1010", "1100", "1001", "1000"],
+    "correctAnswer": "1010",
+    "material": "Technology"
+  },
+  {
+    "id": 45,
+    "text": "What is the capital of Canada?",
+    "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "correctAnswer": "Ottawa",
+    "material": "Geography"
+  },
+  {
+    "id": 46,
+    "text": "What is the main function of red blood cells in the human body?",
+    "options": [
+      "Fight infections",
+      "Transport oxygen",
+      "Produce energy",
+      "Regulate body temperature"
+    ],
+    "correctAnswer": "Transport oxygen",
+    "material": "Biology"
+  },
+  {
+    "id": 47,
+    "text": "Who developed the first successful polio vaccine?",
+    "options": ["Alexander Fleming", "Jonas Salk", "Louis Pasteur", "Edward Jenner"],
+    "correctAnswer": "Jonas Salk",
+    "material": "Biology"
+  },
+  {
+    "id": 48,
+    "text": "What is the main ingredient in traditional glass?",
+    "options": ["Sand", "Clay", "Silicon", "Quartz"],
+    "correctAnswer": "Sand",
+    "material": "Chemistry"
+  },
+  {
+    "id": 49,
+    "text": "What is the acceleration due to gravity on Earth?",
+    "options": ["9.8 m/s²", "10 m/s²", "8.9 m/s²", "9 m/s²"],
+    "correctAnswer": "9.8 m/s²",
+    "material": "Physics"
+  },
+  {
+    "id": 50,
+    "text": "Which mathematician is known for the Fibonacci sequence?",
+    "options": ["Leonhard Euler", "Blaise Pascal", "Fibonacci", "Carl Gauss"],
+    "correctAnswer": "Fibonacci",
+    "material": "Mathematics"
+  },
+  {
+    "id": 51,
+    "text": "What type of rock is formed by volcanic activity?",
+    "options": ["Sedimentary", "Igneous", "Metamorphic", "Granite"],
+    "correctAnswer": "Igneous",
+    "material": "Geology"
+  },
+  {
+    "id": 52,
+    "text": "Who discovered the law of universal gravitation?",
+    "options": ["Galileo Galilei", "Albert Einstein", "Isaac Newton", "Johannes Kepler"],
+    "correctAnswer": "Isaac Newton",
+    "material": "Physics"
+  },
+  {
+    "id": 53,
+    "text": "Which literary work begins with 'It was the best of times, it was the worst of times'?",
+    "options": [
+      "Pride and Prejudice",
+      "Great Expectations",
+      "A Tale of Two Cities",
+      "Oliver Twist"
+    ],
+    "correctAnswer": "A Tale of Two Cities",
+    "material": "Literature"
+  },
+  {
+    "id": 54,
+    "text": "What is the chemical symbol for gold?",
+    "options": ["Ag", "Au", "Fe", "Pt"],
+    "correctAnswer": "Au",
+    "material": "Chemistry"
+  },
+  {
+    "id": 55,
+    "text": "What is the smallest unit of life?",
+    "options": ["Cell", "Atom", "Molecule", "Tissue"],
+    "correctAnswer": "Cell",
+    "material": "Biology"
+  },
+  {
+    "id": 56,
+    "text": "What is the formula for calculating the area of a circle?",
+    "options": ["πr²", "2πr", "πd", "r²"],
+    "correctAnswer": "πr²",
+    "material": "Mathematics"
+  },
+  {
+    "id": 57,
+    "text": "What is the most reactive group of elements in the periodic table?",
+    "options": ["Noble gases", "Halogens", "Alkali metals", "Transition metals"],
+    "correctAnswer": "Alkali metals",
+    "material": "Chemistry"
+  },
+  {
+    "id": 58,
+    "text": "Who is credited with inventing the World Wide Web?",
+    "options": ["Tim Berners-Lee", "Bill Gates", "Steve Jobs", "Alan Turing"],
+    "correctAnswer": "Tim Berners-Lee",
+    "material": "Technology"
+  },
+  {
+    "id": 59,
+    "text": "What is the pH of a neutral solution at 25°C?",
+    "options": ["7", "0", "14", "10"],
+    "correctAnswer": "7",
+    "material": "Chemistry"
+  },
+  {
+    "id": 60,
+    "text": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "correctAnswer": "Mercury",
+    "material": "Astronomy"
+  },
+  {
+    "id": 61,
+    "text": "Which war was fought between 1914 and 1918?",
+    "options": ["World War II", "World War I", "Cold War", "Vietnam War"],
+    "correctAnswer": "World War I",
+    "material": "History"
+  },
+  {
+    "id": 62,
+    "text": "What is the currency of Japan?",
+    "options": ["Won", "Yuan", "Yen", "Dollar"],
+    "correctAnswer": "Yen",
+    "material": "Economics"
+  },
+  {
+    "id": 63,
+    "text": "What is the standard form of the equation of a line?",
+    "options": ["y = mx + b", "x² + y² = r²", "ax + by = c", "x = my + b"],
+    "correctAnswer": "y = mx + b",
+    "material": "Mathematics"
+  },
+  {
+    "id": 64,
+    "text": "What is the boiling point of water at standard atmospheric pressure?",
+    "options": ["90°C", "100°C", "110°C", "80°C"],
+    "correctAnswer": "100°C",
+    "material": "Physics"
+  },
+  {
+    "id": 65,
+    "text": "Which composer wrote 'Symphony No. 9' (Ode to Joy)?",
+    "options": ["Mozart", "Beethoven", "Bach", "Tchaikovsky"],
+    "correctAnswer": "Beethoven",
+    "material": "Music"
+  },
+  {
+    "id": 66,
+    "text": "What is the approximate age of the Earth?",
+    "options": [
+      "4.6 billion years",
+      "13.8 billion years",
+      "6,000 years",
+      "10 million years"
+    ],
+    "correctAnswer": "4.6 billion years",
+    "material": "Geology"
+  },
+  {
+    "id": 67,
+    "text": "Who proposed the heliocentric model of the solar system?",
+    "options": ["Ptolemy", "Copernicus", "Galileo", "Kepler"],
+    "correctAnswer": "Copernicus",
+    "material": "Astronomy"
+  },
+  {
+    "id": 68,
+    "text": "What does HTTP stand for?",
+    "options": [
+      "Hypertext Transfer Protocol",
+      "High Text Transmission Protocol",
+      "Hyperlink Transfer Process",
+      "Hypertext Transmission Program"
+    ],
+    "correctAnswer": "Hypertext Transfer Protocol",
+    "material": "Technology"
+  },
+  {
+    "id": 69,
+    "text": "Which gas is released during photosynthesis?",
+    "options": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "correctAnswer": "Oxygen",
+    "material": "Biology"
+  },
+  {
+    "id": 70,
+    "text": "Who painted 'The Starry Night'?",
+    "options": ["Pablo Picasso", "Claude Monet", "Vincent van Gogh", "Salvador Dalí"],
+    "correctAnswer": "Vincent van Gogh",
+    "material": "Art"
+  },
+  {
+    "id": 71,
+    "text": "What is the second largest planet in our solar system?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "correctAnswer": "Saturn",
+    "material": "Astronomy"
+  },
+  {
+    "id": 72,
+    "text": "What is the square root of 144?",
+    "options": ["10", "11", "12", "13"],
+    "correctAnswer": "12",
+    "material": "Mathematics"
+  },
+  {
+    "id": 73,
+    "text": "What is the unit of frequency?",
+    "options": ["Hertz", "Watt", "Pascal", "Newton"],
+    "correctAnswer": "Hertz",
+    "material": "Physics"
+  },
+  {
+    "id": 74,
+    "text": "Who wrote 'The Origin of Species'?",
+    "options": ["Charles Darwin", "Gregor Mendel", "Alfred Wallace", "Thomas Huxley"],
+    "correctAnswer": "Charles Darwin",
+    "material": "Biology"
+  }
+]
+
+
