@@ -30,7 +30,7 @@ Framework: JavaFX
 
 UI Styling: JavaFX CSS
 
-Data Storage: JSON (using Jackson library) 
+Data Storage: Oracle SQL 
 
 IDE: intellij IDEA
 
