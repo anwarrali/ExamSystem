@@ -1,32 +1,25 @@
 package fx.controllers;
+
 import fx.Main;
-import fx.classes.Answer;
-import fx.classes.Question;
-import fx.classes.Score;
-import fx.classes.utility;
+import fx.classes.*;
 import javafx.fxml.FXML;
-
-
 import javafx.scene.control.Label;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.image.ImageView;
-
 import javafx.scene.control.Pagination;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.sql.*;
+import java.util.*;
+
+import static fx.classes.utility.getConnection;
 
 public class eco {
     @FXML
     private Pagination pane;
     @FXML
     private Label questionLabel;
-
-    private List<Question> questions;
     @FXML
     private Label score;
     @FXML
@@ -36,183 +29,246 @@ public class eco {
     @FXML
     private ImageView matimg;
 
+    private List<Question> questions;
+    private List<Answer> userAnswers = new ArrayList<>();
+
     private static Score resultData;
+    private String category = "art";
+    private int limit = 0;
+    private int studentId = -1;
+    private int examId = -1;
+    //im here
+    User currentUser = SessionManager.getInstance().getCurrentUser();
 
     @FXML
-    public void initialize () {
-        if (resultData != null) {
-            System.out.println("Score: " + resultData.getScore());
-            System.out.println("Percentage: " + resultData.getPercentage());
-            score.setText(String.valueOf(resultData.getScore()));
-            perecntage.setText(String.format("%.2f%%", resultData.getPercentage()));
-        } else {
-            System.out.println("resultData is null. Cannot update labels!");
+    public void initialize() {
+        if (currentUser == null) {
+            System.out.println("No user logged in.");
+            return;
         }
 
+        System.out.println("Current user: " + currentUser.getUsername());
 
-        questions = utility.loadRandomQuestions("src/fx/db/economy.json");
+//        if (resultData != null) {
+//            score.setText(String.valueOf(resultData.getScore()));
+//            perecntage.setText(String.format("%.2f%%", resultData.getPercentage()));
+//        } else {
+//            System.out.println("resultData is null. Cannot update labels!");
+//        }
 
+        try (Connection con = getConnection()) {
+            String query = "SELECT COUNT(*) FROM questions WHERE exam_id = ?";
+            try (PreparedStatement stmt = con.prepareStatement(query)) {
+                stmt.setInt(1, 41);
+                ResultSet rs = stmt.executeQuery();
+                if (rs.next()) {
+                    limit = rs.getInt(1);
+                    System.out.println("limit is " + limit);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
+        studentId = getStudentId(currentUser.getUsername());
+        examId = getCurrentExamId();
+
+        if (studentId == -1 || examId == -1) {
+            System.out.println("Error: Unable to retrieve student ID or exam ID.");
+            return;
+        }
+
+        questions = utility.loadRandomQuestions(limit, category);
         if (!questions.isEmpty()) {
-            pane.setPageCount(30);
+            pane.setPageCount(limit);
             pane.setPageFactory(this::createPage);
         } else {
             System.out.println("No questions available!");
         }
-
     }
 
-    private AnchorPane createPage ( int pageIndex){
-        if (pageIndex >= 30) return null;
+    private AnchorPane createPage(int pageIndex) {
+        if (pageIndex >= questions.size()) return null;
 
         AnchorPane page = new AnchorPane();
         Question currentQuestion = questions.get(pageIndex);
+        if (currentQuestion == null) return null;
+
+        Label questionLabelLocal = new Label(currentQuestion.getText());
+        questionLabelLocal.setLayoutX(50);
+        questionLabelLocal.setLayoutY(50);
+        questionLabelLocal.getStyleClass().add("question-label");
+
         ToggleGroup toggleGroup = new ToggleGroup();
+        List<RadioButton> radioButtons = new ArrayList<>();
 
-        questionLabel.setText(currentQuestion.getText());
-        questionLabel.setLayoutX(50);
-        questionLabel.setLayoutY(50);
-
-        RadioButton op1 = new RadioButton(currentQuestion.getOptions().get(0));
-        op1.setLayoutX(50);
-        op1.setLayoutY(100);
-        op1.setUserData(currentQuestion.getMaterial());
-        op1.getStyleClass().add("radio-button");
-        op1.setToggleGroup(toggleGroup);
-
-        RadioButton op2 = new RadioButton(currentQuestion.getOptions().get(1));
-        op2.setLayoutX(50);
-        op2.setLayoutY(150);
-        op2.setUserData(currentQuestion.getMaterial());
-        op2.getStyleClass().add("radio-button");
-        op2.setToggleGroup(toggleGroup);
-
-        RadioButton op3 = new RadioButton(currentQuestion.getOptions().get(2));
-        op3.setLayoutX(50);
-        op3.setLayoutY(200);
-        op3.setUserData(currentQuestion.getMaterial());
-        op3.getStyleClass().add("radio-button");
-        op3.setToggleGroup(toggleGroup);
-
-        RadioButton op4 = new RadioButton(currentQuestion.getOptions().get(3));
-        op4.setLayoutX(50);
-        op4.setLayoutY(250);
-        op4.setUserData(currentQuestion.getMaterial());
-        op4.getStyleClass().add("radio-button");
-        op4.setToggleGroup(toggleGroup);
-        op1.setOnAction(event -> captureAnswer(pageIndex, op1));
-        op2.setOnAction(event -> captureAnswer(pageIndex, op2));
-        op3.setOnAction(event -> captureAnswer(pageIndex, op3));
-        op4.setOnAction(event -> captureAnswer(pageIndex, op4));
-        Answer existingAnswer = userAnswers.stream()
-                .filter(answer -> answer.getQuestionId() == currentQuestion.getId())
-                .findFirst()
-                .orElse(null);
-
-        if (existingAnswer != null) {
-            if (existingAnswer.getSelectedAnswer().equals(op1.getText())) {
-                op1.setSelected(true);
-            } else if (existingAnswer.getSelectedAnswer().equals(op2.getText())) {
-                op2.setSelected(true);
-            } else if (existingAnswer.getSelectedAnswer().equals(op3.getText())) {
-                op3.setSelected(true);
-            } else if (existingAnswer.getSelectedAnswer().equals(op4.getText())) {
-                op4.setSelected(true);
-            }
+        for (int i = 0; i < 4; i++) {
+            RadioButton rb = new RadioButton(currentQuestion.getOptions().get(i));
+            rb.setLayoutX(50);
+            rb.setLayoutY(100 + i * 50);
+            rb.setUserData(currentQuestion.getMaterial());
+            rb.getStyleClass().add("radio-button");
+            rb.setToggleGroup(toggleGroup);
+            int finalI = i;
+            rb.setOnAction(event -> captureAnswer(pageIndex, rb));
+            radioButtons.add(rb);
         }
 
-        op1.setOnAction(event -> captureAnswer(pageIndex, op1));
-        op2.setOnAction(event -> captureAnswer(pageIndex, op2));
-        op3.setOnAction(event -> captureAnswer(pageIndex, op3));
-        op4.setOnAction(event -> captureAnswer(pageIndex, op4));
+        page.getChildren().add(questionLabelLocal);
+        page.getChildren().addAll(radioButtons);
 
-        page.getChildren().addAll(questionLabel, op1, op2, op3, op4);
         return page;
     }
 
-    List<Answer> userAnswers = new ArrayList<>();
-    public void captureAnswer ( int pageIndex, RadioButton selectedOption){
+    public void captureAnswer(int pageIndex, RadioButton selectedOption) {
         Question currentQuestion = questions.get(pageIndex);
+        calculateScore();
+        System.out.println("Selected option text: " + selectedOption.getText());
+
+        int optionId = getOptionIdFromText(currentQuestion.getId(), selectedOption.getText());
+        if (optionId == -1) {
+            System.out.println("Error: Option ID not found for selected answer.");
+            return;
+        }
 
         Answer existingAnswer = userAnswers.stream()
                 .filter(answer -> answer.getQuestionId() == currentQuestion.getId())
-                .findFirst()
-                .orElse(null);
+                .findFirst().orElse(null);
 
         if (existingAnswer != null) {
-            existingAnswer.setSelectedAnswer(selectedOption.getText());
+            existingAnswer.setSelectedAnswer(optionId);
         } else {
-            Answer userAnswer = new Answer(
-                    currentQuestion.getId(),
-                    selectedOption.getText(),
-                    selectedOption.getUserData().toString()
-            );
-            userAnswers.add(userAnswer);
+            userAnswers.add(new Answer(currentQuestion.getId(), optionId, selectedOption.getUserData().toString()));
         }
-
-
-        System.out.println("Captured Answer: Question ID = " + currentQuestion.getId() +
-                ", Selected Option = " + selectedOption.getText());
     }
+    int scores = 0;
+    public void calculateScore() {
 
-
-    public int calculateScore () {
-        int score = 0;
-
+        System.out.println("Current user: " + currentUser.getUsername());
         for (Answer userAnswer : userAnswers) {
-            Question question = findQuestionById(userAnswer.getQuestionId());
-            if (question != null && userAnswer.getSelectedAnswer().equals(question.getCorrectAnswer())) {
-                score++;
+            int correctOptionId = getCorrectOptionIdFromDB(userAnswer.getQuestionId());
+            //im here
+            System.out.println("Checking QID: " + userAnswer.getQuestionId() + " | Correct: " + correctOptionId + " | Selected: " + userAnswer.getSelectedAnswer());
+
+            if (correctOptionId == userAnswer.getSelectedAnswer()) {
+                scores++;
             }
         }
 
-        return score;
     }
 
+    private int getOptionIdFromText(int questionId, String selectedText) {
+        String query = "SELECT option_id FROM options WHERE question_id = ? AND option_text = ?";
+        try (Connection conn = getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setInt(1, questionId);
+            stmt.setString(2, selectedText);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) return rs.getInt("option_id");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
 
-    public Question findQuestionById ( int questionId){
-        for (Question question : questions) {
-            if (question.getId() == questionId) {
-                return question;
-            }
+    private int getCorrectOptionIdFromDB(int questionId) {
+        String query = "SELECT correct_option_id FROM answers WHERE question_id = ?";
+        try (Connection conn = getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setInt(1, questionId);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) return rs.getInt("correct_option_id");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    private int getStudentId(String username) {
+        String sql = "SELECT student_id FROM students WHERE username = ?";
+        try (Connection conn = getConnection();
+             //im here
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, username);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) return rs.getInt("student_id");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    private int getCurrentExamId() {
+        String sql = "SELECT exam_id FROM exams WHERE TITLE = ?";
+        try (Connection conn = getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, category);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) return rs.getInt("exam_id");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    private String getExamFeedback(int studentId, int examId) {
+        String sql = "SELECT feedback FROM exam_attempts WHERE student_id = ? AND exam_id = ?";
+        try (Connection conn = getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, studentId);
+            stmt.setInt(2, examId);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) return rs.getString("feedback");
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return null;
     }
 
-    public String getMostAnsweredMaterial () {
+    private String getMostAnsweredMaterial() {
         Map<String, Integer> materialCounts = new HashMap<>();
-
         for (Answer userAnswer : userAnswers) {
-            materialCounts.put(userAnswer.getMaterial(),
-                    materialCounts.getOrDefault(userAnswer.getMaterial(), 0) + 1);
+            materialCounts.merge(userAnswer.getMaterial(), 1, Integer::sum);
         }
+        return materialCounts.entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+                .map(Map.Entry::getKey).orElse(null);
+    }
 
-        String mostAnsweredMaterial = null;
-        int maxCount = 0;
-        for (Map.Entry<String, Integer> entry : materialCounts.entrySet()) {
-            if (entry.getValue() > maxCount) {
-                maxCount = entry.getValue();
-                mostAnsweredMaterial = entry.getKey();
+    @FXML
+    public void submit(javafx.event.ActionEvent event) throws Exception {
+        int scoreValue = scores;
+        System.out.println("score"+scoreValue);
+        double percentage = (scoreValue * 100.0) / limit;
+        String mostMaterial = getMostAnsweredMaterial();
+        String feedback = getExamFeedback(studentId, examId);
+
+        try (Connection con = getConnection()) {
+            String getAttemptIdSQL = "SELECT attempt_id FROM exam_attempts WHERE student_id = ? AND exam_id = ?";
+            try (PreparedStatement stmt = con.prepareStatement(getAttemptIdSQL)) {
+                stmt.setInt(1, studentId);
+                stmt.setInt(2, examId);
+                ResultSet rs = stmt.executeQuery();
+                if (rs.next()) {
+                    int attemptId = rs.getInt("attempt_id");
+                    String insertSQL = "INSERT INTO exam_answers (attempt_id, question_id, selected_option_id) VALUES (?, ?, ?)";
+
+                    for (Answer answer : userAnswers) {
+                        try (PreparedStatement insertStmt = con.prepareStatement(insertSQL)) {
+                            insertStmt.setInt(1, attemptId);
+                            insertStmt.setInt(2, answer.getQuestionId());
+                            insertStmt.setInt(3, answer.getSelectedAnswer());
+                            insertStmt.executeUpdate();
+                        }
+                    }
+                }
             }
         }
 
-        return mostAnsweredMaterial;
-    }
-    @FXML
-    public void submit (javafx.event.ActionEvent event) throws Exception {
+        resultData = new Score(scoreValue, percentage, mostMaterial, studentId, examId, feedback, limit, scoreValue);
+        utility.saveResults(resultData);
+        result.setResultData(resultData);
 
-        int score = calculateScore();
-        double percentage = (score * 100.0) / 30;
-        String mostAnsweredMaterial = getMostAnsweredMaterial();
-
-        Score resultData = new Score(score, percentage, null);
-
-        List<Score> results = utility.loadResults();
-        results.add(resultData);
-
-        utility.saveResults(results);
         Main.getInstance().setRoot("/fx/fxmlFiles/result2.fxml");
     }
-
 }
-

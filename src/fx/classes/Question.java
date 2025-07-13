@@ -7,8 +7,21 @@ public class Question {
     private int id;
     private String text;
     private List<String> options;
-    private  String correctAnswer;
+    private String correctAnswer;
     private String material;
+
+    public Question() {
+        this.options = new ArrayList<>();
+    }
+
+    // Constructor with all parameters
+    public Question(int id, String text, List<String> options, String correctAnswer, String material) {
+        this.id = id;
+        this.text = text;
+        this.options = (options != null) ? new ArrayList<>(options) : new ArrayList<>();
+        this.correctAnswer = correctAnswer;
+        this.material = material;
+    }
 
     public int getId() {
         return id;
@@ -30,11 +43,11 @@ public class Question {
         return options;
     }
 
-    public void setOptions(ArrayList<String> options) {
-        this.options = options;
+    public void setOptions(List<String> options) {
+        this.options = (options != null) ? new ArrayList<>(options) : new ArrayList<>();
     }
 
-    public  String getCorrectAnswer() {
+    public String getCorrectAnswer() {
         return correctAnswer;
     }
 
@@ -50,4 +63,14 @@ public class Question {
         this.material = material;
     }
 
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", text='" + text + '\'' +
+                ", options=" + options +
+                ", correctAnswer='" + correctAnswer + '\'' +
+                ", material='" + material + '\'' +
+                '}';
+    }
 }

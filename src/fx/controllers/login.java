@@ -1,7 +1,6 @@
 package fx.controllers;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 import fx.Main;
 import fx.classes.SessionManager;
 import fx.classes.User;
@@ -12,9 +11,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.control.TextField;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-import java.io.File;
-import java.io.IOException;
 public class login {
     @FXML
     private Label status;
@@ -37,40 +39,48 @@ public class login {
             iconn.setImage(image);
         }
     }
+    static String role=Main.getInstance().getRole();
     public static User authenticateUser(String username, String password) {
-        ObjectMapper mapper = new ObjectMapper();
-        File file = new File("src/fx/db/users.json");
-
-        if (!file.exists()) {
-            System.out.println("Error: users.json file not found at " + file.getAbsolutePath());
-            return null;
-        }
-
+        String url = "jdbc:oracle:thin:@localhost:1521/XE";
+        String dbUser = "C##EXAMNEW";
+        String dbPassword = "EXAM123";
+        String sql="";
         try {
-            JsonNode root = mapper.readTree(file);
+            Connection conn = DriverManager.getConnection(url, dbUser, dbPassword);
+            System.out.println("Connected to the database");
+            if (role.equals("student")) {
+                sql = "SELECT 'student' AS role, username, USER_PASSWORD AS password, full_name, email ,phone FROM students WHERE username = ?";
+            } else if (role.equals("admin")) {
+                sql = "SELECT 'admin' AS role, username, USER_PASSWORD AS password, full_name, email,phone FROM admins WHERE username = ?";
+            }
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, username);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                String storedpass = rs.getString("password");
 
-            for (JsonNode userNode : root) {
-                String storedUsername = userNode.get("username").asText();
-                String storedPassword = userNode.get("password").asText();
-
-                if (storedUsername.equals(username) && storedPassword.equals(password)) {
+                if (verifyPassword(password, storedpass)) {
                     return new User(
-                            userNode.get("username").asText(),
-                            userNode.get("password").asText(),
-                            userNode.get("role").asText(),
-                            userNode.get("first").asText(),
-                            userNode.get("lastName").asText(),
-                            userNode.get("emailaddress").asText(),
-                            userNode.get("number").asText()
+                            rs.getString("full_name"),
+                            rs.getString("username"),
+                            rs.getString("email"),
+                            rs.getString("phone"),
+                            rs.getString("role"),
+                            storedpass
                     );
+
                 }
             }
-        } catch (IOException e) {
-            System.out.println("Error reading users.json: " + e.getMessage());
+        } catch (SQLException e) {
+            System.out.println("Error connecting to the database: " + e.getMessage());
             e.printStackTrace();
         }
-
         return null;
+    }
+
+
+    private static boolean verifyPassword(String inputPassword, String storedpass) {
+        return inputPassword.equals(storedpass);
     }
 
     @FXML
@@ -79,18 +89,18 @@ public class login {
         String password = pass.getText();
 
         User foundUser = authenticateUser(username, password);
+        System.out.println("Full User Info: " + foundUser);
 
         if (foundUser != null) {
-            System.out.println("First Name: " + foundUser.getFirst());
+            System.out.println("First Name: " + foundUser.getFullName());
             System.out.println("Email Address: " + foundUser.getEmailaddress());
 
             SessionManager.getInstance().setCurrentUser(foundUser);
             if(Main.getInstance().getRole().equals("student")){
                 Main.getInstance().setRoot("/fx/fxmlFiles/home.fxml");
             }else if(Main.getInstance().getRole().equals("admin")){
-                Main.getInstance().setRoot("/fx/fxmlFiles/adminHome.fxml");
+                Main.getInstance().setRoot("/fx/fxmlFiles/admin.fxml");
             }
-            //Main.getInstance().setRoot("/fx/fxmlFiles/home.fxml");
         } else {
             status.setText("Login failed: Invalid credentials.");
             status.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
@@ -100,13 +110,11 @@ public class login {
     }
     @FXML
     public void login(ActionEvent event) throws Exception {
-
         Main.getInstance().setRoot("/fx/fxmlFiles/mainfx.fxml");
 
     }
     @FXML
     public void back(ActionEvent event) throws Exception {
-
         Main.getInstance().setRoot("/fx/fxmlFiles/start.fxml");
 
     }

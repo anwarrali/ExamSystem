@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.CubicCurve?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="809.0" scaleShape="false" stylesheets="@../styles/result.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.profile">
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="809.0" scaleShape="false" stylesheets="@../styles/result.css" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.profile">
     <children>
         <Label fx:id="title1" layoutX="-29.0" prefHeight="47.0" prefWidth="866.0" stylesheets="@../styles/result.css">
             <font>
@@ -56,10 +56,5 @@
          </font>
       </Label>
       <Button fx:id="outbtn" layoutX="60.0" layoutY="411.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="157.0" text="Logout" />
-      <Label fx:id="role" layoutX="559.0" layoutY="405.0" prefHeight="47.0" prefWidth="158.0">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
     </children>
 </AnchorPane>

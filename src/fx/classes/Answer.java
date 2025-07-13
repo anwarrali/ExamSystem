@@ -2,10 +2,11 @@ package fx.classes;
 
 public class Answer {
     private  int questionId;
-    private  String selectedAnswer;
+    private  int selectedAnswer;
     private String material;
-    private String answer;
-    public Answer(int questionId, String selectedAnswer, String material) {
+
+
+    public Answer(int questionId, int selectedAnswer, String material) {
         this.questionId = questionId;
         this.selectedAnswer = selectedAnswer;
         this.material = material;
@@ -15,15 +16,11 @@ public class Answer {
         return questionId;
     }
 
-    public String getAnswer() {
-        return answer;
-    }
-
-    public  String getSelectedAnswer() {
+    public  int getSelectedAnswer() {
         return selectedAnswer;
     }
 
-    public void setSelectedAnswer(String selectedAnswer) {
+    public void setSelectedAnswer(int selectedAnswer) {
         this.selectedAnswer = selectedAnswer;
     }
 

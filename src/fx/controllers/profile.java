@@ -13,8 +13,6 @@ public class profile {
     @FXML
     private Label fullName;
     @FXML
-    private Label role;
-    @FXML
     private Label email;
     @FXML
     private Label phone;
@@ -42,6 +40,7 @@ public class profile {
     }
     @FXML
     public void logout(ActionEvent event) throws Exception {
+       Main.getInstance().setRole(null);
         Main.getInstance().setRoot("/fx/fxmlFiles/start.fxml");
     }
     @FXML
@@ -53,11 +52,10 @@ public class profile {
     public void initialize() {
         User user = SessionManager.getInstance().getCurrentUser();
 
-        fullName.setText("name: " + user.getFirst()+" "+ user.getLastName());
+        fullName.setText("name: " + user.getFullName());
         email.setText("email-address: " + user.getEmailaddress());
         phone.setText("phone number: "+user.getNumber());
         UserName.setText("username: " + user.getUsername());
-        role.setText(user.getRole());
 
 
 

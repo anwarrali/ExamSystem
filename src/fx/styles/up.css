@@ -23,6 +23,28 @@
 
 
 }
+.text-area {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(18, 23, 18, 0.49);
+    -fx-border-radius: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 4);
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.text-area .scroll-bar,
+.text-area .scroll-bar .thumb {
+    -fx-background-color: transparent;
+}
+
 .text-field{
     -fx-border-color:rgba(18, 23, 18, 0.49);
     -fx-border-radius:30px;
@@ -30,7 +52,37 @@
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 4);
 
 }
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+    -fx-table-cell-border-color: transparent;
+}
 
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 40px;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-alignment: CENTER;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #b3d9ff;
+}
 .text-field:focused {
     -fx-border-color: rgba(130, 201, 125, 0.64);
 }
@@ -45,7 +97,7 @@
 .password-field :focused {
     -fx-border-color: rgba(130, 201, 125, 0.64);
 }
-#Arc,#Arc1,#Arc2{
+#Arc,#Arc1,#Arc2 {
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 4);
 
 }

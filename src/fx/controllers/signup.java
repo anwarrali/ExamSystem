@@ -1,5 +1,5 @@
 package fx.controllers;
-
+import java.sql.*;
 import fx.Main;
 import fx.classes.User;
 import fx.classes.utility;
@@ -12,12 +12,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.control.TextField;
 
 
+import java.sql.DriverManager;
 import java.util.List;
 public class signup {
     @FXML
     private TextField first;
-    @FXML
-    private TextField last;
     @FXML
     private TextField passup;
     @FXML
@@ -41,8 +40,7 @@ public class signup {
             iconn.setImage(image);
        }
         if(first != null) {
-            first.setOnAction(e -> last.requestFocus());
-            last.setOnAction(e -> userup.requestFocus());
+            first.setOnAction(e -> userup.requestFocus());
             userup.setOnAction(e -> email.requestFocus());
             email.setOnAction(e -> phonenum.requestFocus());
             phonenum.setOnAction(e -> passup.requestFocus());
@@ -54,20 +52,20 @@ public class signup {
     }
     @FXML
     public void login(ActionEvent event) throws Exception {
-
         Main.getInstance().setRoot("/fx/fxmlFiles/mainfx.fxml");
-
     }
+    static final String DB_URL = "jdbc:oracle:thin:@localhost:1521/XE";
+    static final String DB_USER = "C##EXAMNEW";
+    static final String DB_PASSWORD = "EXAM123";
     @FXML
     public void signup(ActionEvent event) throws Exception {
        // Main.getInstance().setRoot("/fx/fxmlFiles/signUp.fxml");
 
-        if ( first == null ||last==null|| userup == null || passup == null ||email==null||phonenum==null || passin1==null ) {
+        if ( first == null || userup == null || passup == null ||email==null||phonenum==null || passin1==null ) {
             System.out.println("Error: One or more TextField components are not initialized!");
         }
 
         String firstName = first.getText();
-        String lastName = last.getText();
         String username = userup.getText();
         String emailaddress = email.getText();
         String num = phonenum.getText();
@@ -75,13 +73,20 @@ public class signup {
         String verifyPassword = passin1.getText();
         String role = Main.getInstance().getRole();
         System.out.println("first: " + first);
-
-
-        if (!password.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$")) {
-            signupstatus.setText("Signup failed: Password must be at least 8 characters, including letters, numbers, and symbols");
-            signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
-            return;
-        }
+        try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String checkUsernameSql = "SELECT COUNT(*) FROM students WHERE username = ? UNION SELECT COUNT(*) FROM admins WHERE username = ?";
+            try (PreparedStatement stmt = conn.prepareStatement(checkUsernameSql)) {
+                stmt.setString(1, username);
+                stmt.setString(2, username);
+                ResultSet rs = stmt.executeQuery();
+                rs.next();
+                int count = rs.getInt(1);
+                if (count > 0) {
+                    signupstatus.setText("Signup failed: Username already exists.");
+                    signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
+                    return;
+                }
+            }
         if (!password.equals(verifyPassword)) {
             System.out.println("upstatus updated: " + signupstatus.getText());
 
@@ -102,35 +107,66 @@ public class signup {
             return;
         }
 
-//        if ( firstName.isBlank() || username.isBlank() || password.isBlank()) {
-//            System.out.println("Signup failed: All fields are required.");
-//            return;
-//        }
-//
-//        if (!password.equals(verifyPassword)) {
-//            System.out.println("Signup failed: Passwords do not match.");
-//            return;
-//        }
-        List<User> users = utility.loadUsers();
-        boolean userExists = users.stream().anyMatch(u -> u.getUsername().equals(username));
-        boolean phoneExists = users.stream().anyMatch(u -> u.getNumber().equals(num));
-
-        if (userExists) {
-            signupstatus.setText("Signup failed: Username already exists.");
-            signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
+        if ( firstName.isBlank() || username.isBlank() || password.isBlank()) {
+           signupstatus.setText("Signup failed: All fields are required.");
             return;
+       }
 
+        if (!password.equals(verifyPassword)) {
+            signupstatus.setText("Signup failed: Passwords do not match.");
+            return;
         }
 
-        if (phoneExists) {
-            signupstatus.setText("Signup failed: Phone number already exists.");
+            String checkPhoneSql = "SELECT COUNT(*) FROM students WHERE phone = ? UNION SELECT COUNT(*) FROM admins WHERE phone = ?";
+            try (PreparedStatement stmt = conn.prepareStatement(checkPhoneSql)) {
+                stmt.setString(1, num);
+                stmt.setString(2, num);
+                ResultSet rs = stmt.executeQuery();
+                rs.next();
+                int count = rs.getInt(1);
+                if (count > 0) {
+                    signupstatus.setText("Signup failed: Phone number already exists.");
+                    signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
+                    return;
+                }
+            }
+
+            String checkEmailSql = "SELECT COUNT(*) FROM students WHERE email = ? UNION SELECT COUNT(*) FROM admins WHERE email = ?";
+            try (PreparedStatement stmt = conn.prepareStatement(checkEmailSql)) {
+                stmt.setString(1, emailaddress);
+                stmt.setString(2, emailaddress);
+                ResultSet rs = stmt.executeQuery();
+                rs.next();
+                int count = rs.getInt(1);
+                if (count > 0) {
+                    signupstatus.setText("Signup failed:email address already exists.");
+                    signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
+                    return;
+                }
+            }
+
+            signupstatus.setText("Signup successful!");
+            signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: green;");
+        } catch (SQLException e) {
+            signupstatus.setText("Database error: " + e.getMessage());
+            signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
+            e.printStackTrace();
+        }
+
+        if (!password.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$")) {
+            signupstatus.setText("Signup failed: Password must be at least 8 characters, including letters, numbers, and symbols");
             signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: red;");
             return;
-
         }
-        User newUser = new User(username, password, role, firstName,lastName, emailaddress, num);
-        users.add(newUser);
-        utility.saveUsers(users);
+
+        User newUser = new User(firstName,username,emailaddress,num,password,role);
+        utility.saveUsers(newUser);
+        System.out.println("Username: " + newUser.getUsername());
+        System.out.println("Password: " + newUser.getPassword());
+        System.out.println("Full Name: " + newUser.getFullName());
+        System.out.println("Email: " + newUser.getEmailaddress());
+        System.out.println("Phone: " + newUser.getNumber());
+
         signupstatus.setText("Signup successful!");
         signupstatus.setStyle("-fx-font-size: 12px; -fx-text-fill: green;");
 

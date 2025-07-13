@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.CubicCurve?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="798.0" scaleShape="false" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.home">
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="798.0" scaleShape="false" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.home">
    <children>
       <Label fx:id="title1" layoutX="-24.0" prefHeight="47.0" prefWidth="867.0">
          <font>
@@ -24,7 +24,7 @@
       <Button fx:id="about" layoutX="684.0" layoutY="11.0" mnemonicParsing="false" onAction="#about" text="About" />
       <Button fx:id="profile" layoutX="632.0" layoutY="11.0" mnemonicParsing="false" onAction="#profile" text="Profile" />
       <Button fx:id="exams1" layoutX="580.0" layoutY="11.0" mnemonicParsing="false" onAction="#exams" text="Exams" />
-      <Button fx:id="home" layoutX="524.0" layoutY="11.0" mnemonicParsing="false" onAction="#home" text="Home" />
+      <Button fx:id="home" layoutX="457.0" layoutY="11.0" mnemonicParsing="false" onAction="#home" text="Home" />
       <CubicCurve fx:id="curve" controlX1="-313.0" controlX2="13.79998779296875" controlY1="-7.800006866455078" controlY2="103.40000915527344" endX="187.4000244140625" endY="0.20000457763671875" fill="#83c77da3" layoutX="656.0" layoutY="47.0" startX="-670.2000122070312" startY="0.19999313354492188" stroke="TRANSPARENT" />
       <ImageView fx:id="examimg" fitHeight="258.0" fitWidth="262.0" layoutX="65.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -48,5 +48,6 @@
             <Font size="36.0" />
          </font>
       </Label>
+      <Button fx:id="feed" layoutX="512.0" layoutY="11.0" mnemonicParsing="false" onAction="#feed" text="Feedback" />
    </children>
 </AnchorPane>

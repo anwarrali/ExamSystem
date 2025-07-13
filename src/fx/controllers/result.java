@@ -2,15 +2,20 @@ package fx.controllers;
 
 import fx.Main;
 import fx.classes.Score;
-import fx.classes.SessionManager;
-import fx.classes.User;
 import fx.classes.utility;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
+
+import static fx.classes.utility.getConnection;
 
 public class result {
     @FXML
@@ -27,25 +32,72 @@ public class result {
     public static void setResultData(Score data) {
         resultData = data;
     }
-
     @FXML
+
     public void initialize() {
-        List<Score> results = utility.loadResults();
-        User user = SessionManager.getInstance().getCurrentUser();
+        int limit = 0;
 
-        if (!results.isEmpty()) {
-            Score latestResult = results.getLast();
+        Score latestResult = resultData;
 
-            scorelabel.setText("score :"+(latestResult.getScore())+"/70");
-            perecntage.setText("percentage :"+String.format("%.2f%%", latestResult.getPercentage()));
+        if (latestResult == null) {
+            List<Score> results = utility.loadResults();
+            if (!results.isEmpty()) {
+                latestResult = results.getLast();
+            }
+        }
 
-            String material = latestResult.getMostAnsweredMaterial();
-            System.out.println(material);
-            System.out.println(latestResult.getScore());
-            System.out.println(latestResult.getPercentage());
+        if (latestResult != null) {
+            try (Connection con = getConnection()) {
+                Statement stmt = con.createStatement();
+                ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM questions WHERE exam_id = " + latestResult.getExamId());
+                if (rs.next()) {
+                    limit = rs.getInt(1);
+                    System.out.println("limit is " + limit);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            scorelabel.setText("score : " + latestResult.getScore() + "/" + limit);
+            perecntage.setText("percentage : " + String.format("%.2f%%", latestResult.getPercentage()));
+            String material=determineMaterialByPercentage(latestResult.getPercentage());
+
+            System.out.println("material: " + material);
+            System.out.println("score: " + latestResult.getScore());
+            System.out.println("percentage: " + latestResult.getPercentage());
             setMaterialDetails(material);
+        } else {
+            scorelabel.setText("No result found");
+            perecntage.setText("");
         }
     }
+    private String determineMaterialByPercentage(double percentage) {
+        if (percentage >= 90) {
+            return "Mathematics";
+        } else if (percentage >= 80) {
+            return "Physics";
+        } else if (percentage >= 70) {
+            return "Technology";
+        } else if (percentage >= 60) {
+            return "Chemistry";
+        } else if (percentage >= 50) {
+            return "Biology";
+        } else if (percentage >= 40) {
+            return "Geography";
+        } else if (percentage >= 30) {
+            return "History";
+        } else if (percentage >= 20) {
+            return "Art";
+        } else if (percentage >= 10) {
+            return "Music";
+        } else if(percentage>0){
+            return "Economics";
+        }
+        else{
+            return "Other";
+        }
+    }
+
     private void setMaterialDetails(String material) {
         if (material.equals("Mathematics")) {
             Image image = new Image("/img/calculating.png");
@@ -107,10 +159,11 @@ public class result {
             matimg.setImage(image12);
             examdsc.setText("Art is your strength! \n" +
                     "Your creative skills and visual storytelling are impressive. Consider Fine Arts, Graphic Design, or Interior Design to bring your artistic vision to life.");
-        } else {
+        } else if(material.equals("Other")) {
             examdsc.setText("No specific subject detected. Keep exploring and discovering your strengths!");
         }
     }
+
     @FXML
     public void home(ActionEvent event) throws Exception {
         Main.getInstance().setRoot("/fx/fxmlFiles/home.fxml");

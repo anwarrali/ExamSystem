@@ -26,7 +26,7 @@ public class Main extends Application {
             Parent mainScreen = FXMLLoader.load(getClass().getResource("/fx/fxmlFiles/start.fxml"));
             rootPane.getChildren().add(mainScreen);
         } catch (Exception e) {
-            System.err.println("Error loading FXML file (start.fxml): " + e.getMessage());
+            System.err.println("Error " + e.getMessage());
             e.printStackTrace();
             return;
         }

@@ -32,7 +32,7 @@ public class home {
             System.out.println("Icon is null");
         }
         if (namestd != null) {
-            namestd.setText("Hello, " + user.getFirst());
+            namestd.setText("Hello, " + user.getFullName());
         }
 
     }
@@ -54,18 +54,22 @@ public class home {
     @FXML
     public void about(ActionEvent event) throws Exception {
         Main.getInstance().setRoot("/fx/fxmlFiles/about.fxml");
-
     }
     @FXML
     public void logout(ActionEvent event) throws Exception {
         Main.getInstance().setRoot("/fx/fxmlFiles/start.fxml");
-
     }
     @FXML
     public void exams(ActionEvent event) throws Exception {
         Main.getInstance().setRoot("/fx/fxmlFiles/exams.fxml");
+    }
+    @FXML
+    public void feed(ActionEvent event) throws Exception {
+
+
+        Main.getInstance().setRoot("/fx/fxmlFiles/studentFeed.fxml");
+
 
     }
-
 
 }

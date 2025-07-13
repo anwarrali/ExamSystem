@@ -23,21 +23,20 @@
                <image>
                   <Image url="@../../img/graduation.png" />
                </image></ImageView>
-                <PasswordField fx:id="passup" layoutX="26.0" layoutY="303.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="Password" />
-                <Button fx:id="signup1" layoutX="197.0" layoutY="384.0" mnemonicParsing="false" onAction="#signup" prefHeight="34.0" prefWidth="146.0" styleClass="loginbtn" stylesheets="@../../../../OnlineExamanitionSystem/src/fx/styles/style.css" text="Sign Up" />
-                <TextField fx:id="last" layoutX="26.0" layoutY="148.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="Last Name" />
-                <Button fx:id="loginbtn" layoutX="26.0" layoutY="388.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="126.0" text="Back to login" />
-                <PasswordField fx:id="passin1" layoutX="26.0" layoutY="340.0" onAction="#signup" prefHeight="19.0" prefWidth="308.0" promptText="Verify Password" />
-                <TextField fx:id="userup" layoutX="26.0" layoutY="189.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="User Name" />
-                <TextField fx:id="first" layoutX="26.0" layoutY="103.0" onAction="#signup" prefHeight="25.0" prefWidth="308.0" promptText="First Name" />
+                <PasswordField fx:id="passup" layoutX="26.0" layoutY="265.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="Password" />
+                <Button fx:id="signup1" layoutX="197.0" layoutY="358.0" mnemonicParsing="false" onAction="#signup" prefHeight="34.0" prefWidth="146.0" styleClass="loginbtn" stylesheets="@../../../../OnlineExamanitionSystem/src/fx/styles/style.css" text="Sign Up" />
+                <Button fx:id="loginbtn" layoutX="26.0" layoutY="358.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="126.0" text="Back to login" />
+                <PasswordField fx:id="passin1" layoutX="26.0" layoutY="303.0" onAction="#signup" prefHeight="19.0" prefWidth="308.0" promptText="Verify Password" />
+                <TextField fx:id="userup" layoutX="26.0" layoutY="148.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="User Name" />
+                <TextField fx:id="first" layoutX="26.0" layoutY="103.0" onAction="#signup" prefHeight="25.0" prefWidth="308.0" promptText="Full Name" />
                 <Label layoutX="35.0" layoutY="40.0" text="Sign Up " textAlignment="CENTER">
                     <font>
                         <Font size="23.0" />
                     </font>
                 </Label>
-            <TextField fx:id="email" layoutX="26.0" layoutY="226.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="email address" />
-            <TextField fx:id="phonenum" layoutX="26.0" layoutY="265.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="phone number" />
-            <Label fx:id="signupstatus" layoutX="43.0" layoutY="440.0" prefHeight="34.0" prefWidth="308.0">
+            <TextField fx:id="email" layoutX="26.0" layoutY="185.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="email address" />
+            <TextField fx:id="phonenum" layoutX="26.0" layoutY="226.0" onAction="#signup" prefHeight="26.0" prefWidth="308.0" promptText="phone number" />
+            <Label fx:id="signupstatus" layoutX="43.0" layoutY="414.0" prefHeight="62.0" prefWidth="335.0" wrapText="true">
                <font>
                   <Font size="14.0" />
                </font>

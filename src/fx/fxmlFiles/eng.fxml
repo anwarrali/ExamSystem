@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane fx:id="root" prefHeight="491.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.eng">
+<AnchorPane fx:id="root" prefHeight="491.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.eng">
     <children>
         <Pagination fx:id="pane" currentPageIndex="1" maxPageIndicatorCount="70" pageCount="70" prefHeight="491.0" prefWidth="809.0" stylesheets="@../styles/GenExam.css" />
         <Label fx:id="questionLabel" layoutX="50.0" layoutY="15.0" prefHeight="50.0" prefWidth="522.0" stylesheets="@../styles/GenExam.css" wrapText="true" />

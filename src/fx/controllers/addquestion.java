@@ -53,7 +53,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial(" Science");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/science.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/science.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -84,7 +84,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("Computer Science");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/cs.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/cs.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -116,7 +116,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("economy");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/economy.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/economy.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -147,7 +147,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("engineering");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/eng.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/eng.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -178,7 +178,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("medicine");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/medicine.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/medicine.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -209,7 +209,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("art and design");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/art.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/art.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -240,7 +240,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("media");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/media.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/media.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -271,7 +271,7 @@ public class addquestion {
                                 ans4 ? op4 : null);
         question.setMaterial("general question");
 
-        utility.saveQuestions(Arrays.asList(question), "src/fx/db/Question.json");
+        //utility.saveQuestions(Arrays.asList(question), "src/fx/db/Question.json");
 
         saveSt.setText("Question Saved Successfully");
         saveSt.setStyle("-fx-text-fill: green;");
@@ -279,7 +279,7 @@ public class addquestion {
 
     @FXML
     public void back(ActionEvent event) throws IOException {
-        Main.getInstance().setRoot("/fx/fxmlFiles/adminHome.fxml");
+        Main.getInstance().setRoot("/fx/fxmlFiles/admin.fxml");
     }
 
 }

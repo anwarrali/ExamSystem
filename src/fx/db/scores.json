@@ -346,4 +346,68 @@
   "score" : 1,
   "percentage" : 1.4285714285714286,
   "mostAnsweredMaterial" : "History"
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : "Chemistry"
+}, {
+  "score" : 7,
+  "percentage" : 10.0,
+  "mostAnsweredMaterial" : "Mathematics"
+}, {
+  "score" : 35,
+  "percentage" : 50.0,
+  "mostAnsweredMaterial" : "Biology"
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : "Art"
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : "History"
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : "History"
+}, {
+  "score" : 1,
+  "percentage" : 1.4285714285714286,
+  "mostAnsweredMaterial" : "History"
+}, {
+  "score" : 1,
+  "percentage" : 3.3333333333333335,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 0,
+  "percentage" : 0.0,
+  "mostAnsweredMaterial" : null
+}, {
+  "score" : 1,
+  "percentage" : 1.4285714285714286,
+  "mostAnsweredMaterial" : "History"
 } ]

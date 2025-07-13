@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" prefHeight="491.0" prefWidth="809.0" style="-fx-background-color: #82C97D28;" stylesheets="@../styles/exams.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.addquestion">
+<AnchorPane fx:id="rootPane" prefHeight="491.0" prefWidth="809.0" style="-fx-background-color: #82C97D28;" stylesheets="@../styles/exams.css" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.addquestion">
     <children>
         <Button fx:id="arrow" layoutX="13.0" layoutY="15.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="86.0" text="←">
             <font>

@@ -28,3 +28,14 @@
 #pane{
     -fx-background-color: rgba(130, 201, 125, 0.16);
 }
+#add {
+    -fx-text-fill: rgba(130, 201, 125, 0.64);
+    -fx-text-fill: #444;
+    -fx-border-radius: 0px;
+}
+
+#add:hover {
+    -fx-text-fill: rgba(130, 201, 125, 0.64);
+
+
+}

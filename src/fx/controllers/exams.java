@@ -21,7 +21,6 @@ public class exams {
  @FXML
     public void back(javafx.event.ActionEvent event) throws IOException {
      Main.getInstance().setRoot("/fx/fxmlFiles/home.fxml");
-
  }
     @FXML
     public void med(javafx.event.ActionEvent event) throws IOException {
